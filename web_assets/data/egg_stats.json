@@ -1,0 +1,14 @@
+{
+  "total_eggs": 220,
+  "qualified_eggs": 199,
+  "broken_eggs": 14,
+  "dirty_eggs": 7,
+  "total_records": 68,
+  "avg_weight": 56.3,
+  "broken_rate": "6.4%",
+  "laying_rate": "70%~80%",
+  "start_date": "2026-08-10",
+  "end_date": "2026-09-14",
+  "period_text": "記錄至 2026-09-14（全歷程累計 220 顆）",
+  "remote_csv_url": ""
+}

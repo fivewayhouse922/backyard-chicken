@@ -1,0 +1,1742 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>雞鳴豐田｜五味屋兒少農牧培力方案・2026 花蓮青年夢想家成果展</title>
+  <link rel="icon" type="image/webp" href="web_assets/images/logo_icon.webp">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            pulp: '#EAE2D2',
+            pulpDark: '#D8CDB8',
+            pulpDeeper: '#BFB29A',
+            eggShell: '#B9835A',
+            eggWarm: '#D4A373',
+            eggPale: '#F5EBE1',
+            printInk: '#3B2A20',
+            roselleRed: '#9C2B3A',
+            stampRed: '#A4343A',
+            markerYellow: '#FDF0A6',
+            kraft: '#C9A878',
+            kraftDark: '#8F6B38',
+            pencilGray: '#6B7280'
+          },
+          fontFamily: {
+            serif: ['"Noto Serif TC"', 'serif'],
+            sans: ['"Noto Sans TC"', 'sans-serif'],
+            mono: ['"Courier New"', 'monospace']
+          },
+          boxShadow: {
+            'card-lift': '0 12px 30px -4px rgba(59, 42, 32, 0.12), 0 4px 12px -2px rgba(59, 42, 32, 0.08)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- GLightbox CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+  <style>
+    /* ── 環保紙漿底色 ＋ 手帳方格筆記底紋 ── */
+    body {
+      background-color: #EAE2D2;
+      background-image: 
+        linear-gradient(rgba(59, 42, 32, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(59, 42, 32, 0.045) 1px, transparent 1px);
+      background-size: 24px 24px;
+      color: #3B2A20;
+      font-family: 'Noto Sans TC', sans-serif;
+    }
+
+    /* ── 螢光筆手繪塗刷劃線效果 ── */
+    .highlight-marker {
+      background: linear-gradient(104deg, rgba(246, 218, 92, 0.12) 0.9%, rgba(246, 218, 92, 0.88) 2.4%, rgba(246, 218, 92, 0.65) 98%);
+      border-radius: 4px;
+      padding: 0.1em 0.35em;
+      box-decoration-break: clone;
+      -webkit-box-decoration-break: clone;
+    }
+
+    /* ── 和紙撕邊牛皮膠帶效果 ── */
+    .tape-strip {
+      position: absolute;
+      height: 26px;
+      width: 105px;
+      background: rgba(206, 175, 131, 0.78);
+      backdrop-filter: blur(2px);
+      border-left: 2px dashed rgba(168, 132, 85, 0.65);
+      border-right: 2px dashed rgba(168, 132, 85, 0.65);
+      box-shadow: 0 1px 4px rgba(59, 42, 32, 0.15);
+      z-index: 20;
+      pointer-events: none;
+    }
+
+    /* ── 蛋殼噴印字樣 ── */
+    .egg-stamp-text {
+      font-family: 'Courier New', monospace;
+      letter-spacing: 0.15em;
+      color: #3B2A20;
+      opacity: 0.9;
+      font-weight: 700;
+    }
+
+    /* ── 圓形雙環紅色檢定印章 ── */
+    .rubber-stamp {
+      border: 3px double #9C2B3A;
+      color: #9C2B3A;
+      border-radius: 50%;
+      text-transform: uppercase;
+      font-weight: 900;
+      letter-spacing: 1px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      transform: rotate(-6deg);
+      box-shadow: 0 0 0 1px rgba(156, 43, 58, 0.3);
+      user-select: none;
+    }
+
+    /* ── 拍立得照片卡片 ── */
+    .polaroid-card {
+      background: #ffffff;
+      padding: 12px 12px 28px 12px;
+      box-shadow: 0 6px 18px rgba(59, 42, 32, 0.10), 0 1px 3px rgba(0,0,0,0.06);
+      border-radius: 4px;
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .polaroid-card:hover {
+      transform: translateY(-2px) scale(1.008);
+      box-shadow: 0 10px 22px rgba(59, 42, 32, 0.14);
+    }
+
+    /* ── 彩色便條紙 ── */
+    .sticky-note {
+      position: relative;
+      box-shadow: 0 6px 16px rgba(59, 42, 32, 0.10);
+      border-radius: 2px 2px 18px 2px;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .sticky-note:hover {
+      transform: translateY(-4px) rotate(0deg) scale(1.02) !important;
+      box-shadow: 0 14px 24px rgba(59, 42, 32, 0.16);
+    }
+
+    /* ── 蛋盒凹槽與立體感 ── */
+    .carton-slot {
+      background: #D8CDB8;
+      box-shadow: inset 0 4px 8px rgba(59, 42, 32, 0.18), inset 0 -2px 4px rgba(255, 255, 255, 0.45);
+      border-radius: 2rem;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .carton-slot:hover {
+      background: #CEC0A8;
+      transform: translateY(-2px);
+    }
+
+    /* ── 蛋體造型（升級為立體飽滿、高光鮮活之放牧土雞蛋 Vivid 質感） ── */
+    .egg-shape {
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      background:
+        radial-gradient(ellipse at 32% 22%, rgba(255, 255, 255, 0.96) 0%, rgba(255, 255, 255, 0.5) 18%, rgba(255, 240, 220, 0.15) 42%, transparent 62%),
+        radial-gradient(ellipse at 42% 38%, #FEDFBE 0%, #F49B55 30%, #D4581B 68%, #782105 100%);
+      box-shadow:
+        inset 1px 2px 4px rgba(255, 255, 255, 0.75),
+        inset -3px -5px 10px rgba(90, 25, 5, 0.45),
+        0 8px 18px rgba(90, 35, 10, 0.28),
+        0 2px 5px rgba(0, 0, 0, 0.12);
+      transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+      position: relative;
+    }
+    .carton-slot:hover .egg-shape,
+    .egg-shape:hover {
+      transform: translateY(-8px) scale(1.08) rotate(-1deg);
+      box-shadow:
+        inset 2px 3px 6px rgba(255, 255, 255, 0.88),
+        inset -3px -5px 12px rgba(90, 25, 5, 0.5),
+        0 14px 26px rgba(212, 88, 27, 0.38),
+        0 4px 8px rgba(0, 0, 0, 0.15);
+      filter: brightness(1.04) saturate(1.15);
+    }
+
+    /* ── 蛋盒外包裝封套邊框 ── */
+    .sleeve-border {
+      border: 2px dashed #9C2B3A;
+    }
+
+    /* ── 擬真紙漿蛋盒熱區與雙向連動 ── */
+    .egg-hotspot {
+      position: absolute;
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      cursor: pointer;
+      transition: all 0.28s cubic-bezier(0.34, 1.56, 0.64, 1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      -webkit-tap-highlight-color: transparent;
+      outline: none;
+    }
+    .egg-hotspot:hover,
+    .egg-hotspot:active,
+    .egg-hotspot.is-active {
+      background: radial-gradient(circle, rgba(254, 218, 106, 0.38) 0%, rgba(212, 88, 27, 0.22) 70%, transparent 100%);
+      box-shadow: 0 0 25px rgba(245, 155, 85, 0.85), inset 0 0 12px rgba(255, 255, 255, 0.75);
+      transform: translateY(-4px) scale(1.08);
+      z-index: 20;
+    }
+    .egg-tag-capsule {
+      transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+      -webkit-tap-highlight-color: transparent;
+    }
+    .egg-tag-capsule:hover,
+    .egg-tag-capsule:active,
+    .egg-tag-capsule.is-active {
+      transform: translateY(-3px) scale(1.03);
+      border-color: #9C2B3A !important;
+      background-color: #FFF9EE !important;
+      box-shadow: 0 6px 16px rgba(156, 43, 58, 0.16);
+    }
+
+    /* ── 右側書籤導覽 ── */
+    .book-tab {
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .book-tab:hover {
+      transform: translateX(-8px);
+    }
+
+    /* ── 影片自適應容器 ── */
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 1.25rem;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* ── Padlet 容器 ── */
+    .padlet-responsive-frame {
+      width: 100%;
+      height: 60vh;
+      min-height: 480px;
+      display: block;
+      -webkit-overflow-scrolling: touch;
+    }
+    @media (min-width: 640px) {
+      .padlet-responsive-frame {
+        height: 620px;
+        min-height: 620px;
+      }
+    }
+
+    /* ── 平滑滾動與錨點對齊 ── */
+    html {
+      scroll-behavior: smooth;
+    }
+    .snap-section {
+      scroll-margin-top: 4.5rem;
+    }
+  </style>
+</head>
+<body class="selection:bg-eggWarm selection:text-white min-h-screen">
+
+  <!-- 頂部輕量導覽條 -->
+  <nav class="sticky top-0 z-50 bg-[#EAE2D2]/95 backdrop-blur-md border-b border-printInk/15 py-3 px-4 sm:px-8 shadow-xs">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <!-- 左側品牌與專案名稱 -->
+      <a href="#" class="flex items-center space-x-2.5 group">
+        <img src="web_assets/images/logo_icon.webp" alt="五味屋" class="h-8 w-8 sm:h-9 sm:w-9 object-contain rounded-full border border-printInk/20 group-hover:scale-105 transition" loading="lazy">
+        <div>
+          <span class="text-sm sm:text-base font-black text-printInk font-serif tracking-wide block leading-tight">雞鳴豐田</span>
+          <span class="text-[10px] text-pencilGray font-serif block leading-tight">五味屋兒少農牧培力成果展</span>
+        </div>
+      </a>
+
+      <!-- 右側「2026 花蓮青年夢想家計畫」標籤 -->
+      <div class="flex items-center gap-2">
+        <span class="px-3.5 py-1 rounded-full bg-kraft/25 text-kraftDark text-xs font-bold border border-kraftDark/30 font-mono shadow-2xs">
+          2026 花蓮青年夢想家計畫
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 右側筆記本書籤索引 (Desktop) -->
+  <aside class="fixed right-0 top-1/6 z-40 hidden xl:flex flex-col space-y-1.5 pointer-events-auto">
+    <a href="#cover" class="book-tab bg-kraft text-white px-3.5 py-1.5 rounded-l-xl text-xs font-bold shadow-md hover:bg-kraftDark">
+      <i class="fa-solid fa-egg mr-1"></i> 蛋盒
+    </a>
+    <a href="#block-1" class="book-tab bg-[#F9E2AF] text-printInk px-3.5 py-1.5 rounded-l-xl text-xs font-bold shadow-md">
+      01 緣起
+    </a>
+    <a href="#block-2" class="book-tab bg-[#A0C4FF] text-printInk px-3.5 py-1.5 rounded-l-xl text-xs font-bold shadow-md">
+      02 自造
+    </a>
+    <a href="#block-3" class="book-tab bg-[#BDB2FF] text-printInk px-3.5 py-1.5 rounded-l-xl text-xs font-bold shadow-md">
+      03 動福
+    </a>
+    <a href="#block-4" class="book-tab bg-[#FFD166] text-printInk px-3.5 py-1.5 rounded-l-xl text-xs font-bold shadow-md">
+      04 數據
+    </a>
+    <a href="#block-5" class="book-tab bg-[#9BF6FF] text-printInk px-3.5 py-1.5 rounded-l-xl text-xs font-bold shadow-md">
+      05 世代
+    </a>
+    <a href="#block-6" class="book-tab bg-roselleRed text-white px-3.5 py-1.5 rounded-l-xl text-xs font-bold shadow-md">
+      06 留言
+    </a>
+  </aside>
+
+  <!-- 內容主容器 -->
+  <main class="max-w-5xl mx-auto px-3 sm:px-8 py-6 sm:py-12 space-y-12 sm:space-y-16">
+
+    <!-- 00 首屏：田野實踐六大核心篇章（2R X 3C 紙漿蛋盒導覽）與簽到欄 -->
+    <section id="cover" class="snap-section bg-[#F2EADB] rounded-3xl p-5 sm:p-12 border-2 border-pulpDeeper shadow-2xl relative overflow-hidden min-h-[90dvh] sm:min-h-0 flex flex-col justify-center">
+      <!-- 頂部和紙膠帶固定 -->
+      <div class="tape-strip -top-3 left-1/2 -translate-x-1/2 -rotate-1"></div>
+
+      <!-- 右上角紅色復古檢定印章 -->
+      <div class="absolute top-6 right-6 sm:top-10 sm:right-10 rubber-stamp w-24 h-24 sm:w-28 sm:h-28 text-[9px] sm:text-[11px] hidden md:inline-flex">
+        <span>2026 花蓮</span>
+        <span class="text-xs sm:text-sm font-black my-0.5">青年夢想家</span>
+        <span>田野成果檢核</span>
+      </div>
+
+      <!-- 蛋盒封標帶 -->
+      <div class="max-w-xl mx-auto mb-6 sm:mb-8 text-center sleeve-border p-4 sm:p-5 rounded-2xl bg-white/80 shadow-xs relative">
+        <span class="text-[10px] font-mono font-bold text-roselleRed tracking-widest uppercase block mb-1">
+          ✦ 2026 花蓮青年夢想家提案獲獎計畫・非籠飼特級品 ✦
+        </span>
+        <h1 class="text-3xl sm:text-5xl font-black font-serif text-printInk tracking-tight">
+          雞鳴豐田
+        </h1>
+        <p class="text-base sm:text-lg font-bold text-kraftDark font-serif mt-1">
+          從雞舍到社區食農的教育協力行動
+        </p>
+        <p class="text-xs text-printInk/80 mt-2 font-serif italic">
+          「讓一座雞舍，成為孩子學習勞動與社會參與的起點。」
+        </p>
+      </div>
+
+      <!-- 6 入擬真紙漿蛋盒核心互動載體 (2R X 3C，兩排三格・專為手機與桌面自適應打造) -->
+      <div class="mb-3 sm:mb-5">
+        <!-- 手帳風格條狀背景品名標籤 -->
+        <div class="text-center mb-2.5 sm:mb-3">
+          <div class="inline-flex items-center gap-2 px-4 sm:px-6 py-1.5 rounded-full bg-[#FAF4E8] border border-amber-300/90 shadow-2xs rotate-[-0.5deg]">
+            <span class="w-2 h-2 rounded-full bg-forestGreen animate-pulse"></span>
+            <h2 class="text-sm sm:text-lg font-black font-serif text-printInk tracking-wide">
+              五味屋兒少友善放牧鮮蛋
+            </h2>
+          </div>
+        </div>
+
+        <!-- 擬真紙漿蛋盒本體容器 (真實多層次接地陰影，還原先前精巧尺寸) -->
+        <div class="relative max-w-[320px] sm:max-w-[380px] mx-auto select-none" style="filter: drop-shadow(0 14px 18px rgba(59, 42, 32, 0.25)) drop-shadow(0 4px 6px rgba(59, 42, 32, 0.15)) drop-shadow(0 1px 3px rgba(59, 42, 32, 0.10));">
+          <!-- 高解析寫實開蓋紙漿蛋盒底圖（精準去背緊湊無留白 PNG） -->
+          <img src="web_assets/images/egg_carton_realistic.png" alt="五味屋兒少友善放牧鮮蛋" class="w-full h-auto object-contain select-none block" loading="eager">
+
+          <!-- 6 個蛋位互動熱區（2R × 3C 精準貼合每顆蛋，適配緊湊裁切版） -->
+          <!-- 上排蛋 1、2、3 -->
+          <a href="#block-1" id="egg-spot-1" data-target="1" class="egg-hotspot" style="left: 7.8%; top: 30.7%; width: 26.1%; height: 25.4%;" title="篇章 01：緣起理念">
+            <span class="text-[9px] sm:text-[11px] font-mono font-black text-amber-950 bg-white/85 backdrop-blur-xs px-1.5 py-0.5 rounded-full shadow-2xs opacity-90 group-hover:opacity-100">01</span>
+          </a>
+          <a href="#block-2" id="egg-spot-2" data-target="2" class="egg-hotspot" style="left: 36.8%; top: 30.7%; width: 26.1%; height: 25.4%;" title="篇章 02：自造日誌">
+            <span class="text-[9px] sm:text-[11px] font-mono font-black text-forestGreen bg-white/85 backdrop-blur-xs px-1.5 py-0.5 rounded-full shadow-2xs opacity-90 group-hover:opacity-100">02</span>
+          </a>
+          <a href="#block-3" id="egg-spot-3" data-target="3" class="egg-hotspot" style="left: 65.8%; top: 30.7%; width: 26.1%; height: 25.4%;" title="篇章 03：跨代工法">
+            <span class="text-[9px] sm:text-[11px] font-mono font-black text-blue-900 bg-white/85 backdrop-blur-xs px-1.5 py-0.5 rounded-full shadow-2xs opacity-90 group-hover:opacity-100">03</span>
+          </a>
+
+          <!-- 下排蛋 4、5、6 -->
+          <a href="#block-4" id="egg-spot-4" data-target="4" class="egg-hotspot" style="left: 6.7%; top: 53.4%; width: 26.7%; height: 32.1%;" title="篇章 04：產蛋數據">
+            <span class="text-[9px] sm:text-[11px] font-mono font-black text-roselleRed bg-white/85 backdrop-blur-xs px-1.5 py-0.5 rounded-full shadow-2xs opacity-90 group-hover:opacity-100">04</span>
+          </a>
+          <a href="#block-5" id="egg-spot-5" data-target="5" class="egg-hotspot" style="left: 36.8%; top: 53.4%; width: 26.7%; height: 32.1%;" title="篇章 05：友善標籤">
+            <span class="text-[9px] sm:text-[11px] font-mono font-black text-amber-900 bg-white/85 backdrop-blur-xs px-1.5 py-0.5 rounded-full shadow-2xs opacity-90 group-hover:opacity-100">05</span>
+          </a>
+          <a href="#block-6" id="egg-spot-6" data-target="6" class="egg-hotspot" style="left: 67.0%; top: 53.4%; width: 26.7%; height: 32.1%;" title="篇章 06：田野換禮">
+            <span class="text-[9px] sm:text-[11px] font-mono font-black text-purple-900 bg-white/85 backdrop-blur-xs px-1.5 py-0.5 rounded-full shadow-2xs opacity-90 group-hover:opacity-100">06</span>
+          </a>
+        </div>
+
+        <!-- 蛋盒底部真實接觸地面柔焦陰影（Ground Occlusion Shadow） -->
+        <div class="w-3/4 h-3.5 mx-auto -mt-2 bg-[#3B2A20]/22 rounded-[50%] blur-sm pointer-events-none"></div>
+
+        <!-- 蛋盒正下方：2R × 3C 大字號手帳牛皮撕邊標籤列（手機端超好按、大觸控面積） -->
+        <div class="grid grid-cols-3 gap-2 sm:gap-3 max-w-[360px] sm:max-w-lg mx-auto mt-2 sm:mt-3 px-1">
+          <!-- 01 -->
+          <a href="#block-1" id="egg-tag-1" data-target="1" class="egg-tag-capsule p-2 sm:p-3 rounded-2xl bg-white/90 border border-amber-300/80 shadow-2xs text-center flex flex-col items-center group cursor-pointer">
+            <span class="text-[9px] sm:text-[10px] font-mono font-bold text-amber-800 bg-amber-100 px-1.5 py-0.2 rounded mb-1">LOT 01</span>
+            <span class="text-xs sm:text-sm font-black font-serif text-printInk group-hover:text-roselleRed transition leading-tight">緣起理念</span>
+          </a>
+          <!-- 02 -->
+          <a href="#block-2" id="egg-tag-2" data-target="2" class="egg-tag-capsule p-2 sm:p-3 rounded-2xl bg-white/90 border border-amber-300/80 shadow-2xs text-center flex flex-col items-center group cursor-pointer">
+            <span class="text-[9px] sm:text-[10px] font-mono font-bold text-forestGreen bg-green-100 px-1.5 py-0.2 rounded mb-1">LOT 02</span>
+            <span class="text-xs sm:text-sm font-black font-serif text-printInk group-hover:text-roselleRed transition leading-tight">自造日誌</span>
+          </a>
+          <!-- 03 -->
+          <a href="#block-3" id="egg-tag-3" data-target="3" class="egg-tag-capsule p-2 sm:p-3 rounded-2xl bg-white/90 border border-amber-300/80 shadow-2xs text-center flex flex-col items-center group cursor-pointer">
+            <span class="text-[9px] sm:text-[10px] font-mono font-bold text-blue-800 bg-blue-100 px-1.5 py-0.2 rounded mb-1">LOT 03</span>
+            <span class="text-xs sm:text-sm font-black font-serif text-printInk group-hover:text-roselleRed transition leading-tight">跨代工法</span>
+          </a>
+          <!-- 04 -->
+          <a href="#block-4" id="egg-tag-4" data-target="4" class="egg-tag-capsule p-2 sm:p-3 rounded-2xl bg-white/90 border border-amber-300/80 shadow-2xs text-center flex flex-col items-center group cursor-pointer">
+            <span class="text-[9px] sm:text-[10px] font-mono font-bold text-roselleRed bg-rose-100 px-1.5 py-0.2 rounded mb-1">LOT 04</span>
+            <span class="text-xs sm:text-sm font-black font-serif text-printInk group-hover:text-roselleRed transition leading-tight">產蛋數據</span>
+          </a>
+          <!-- 05 -->
+          <a href="#block-5" id="egg-tag-5" data-target="5" class="egg-tag-capsule p-2 sm:p-3 rounded-2xl bg-white/90 border border-amber-300/80 shadow-2xs text-center flex flex-col items-center group cursor-pointer">
+            <span class="text-[9px] sm:text-[10px] font-mono font-bold text-amber-900 bg-amber-100 px-1.5 py-0.2 rounded mb-1">LOT 05</span>
+            <span class="text-xs sm:text-sm font-black font-serif text-printInk group-hover:text-roselleRed transition leading-tight">友善標籤</span>
+          </a>
+          <!-- 06 -->
+          <a href="#block-6" id="egg-tag-6" data-target="6" class="egg-tag-capsule p-2 sm:p-3 rounded-2xl bg-white/90 border border-amber-300/80 shadow-2xs text-center flex flex-col items-center group cursor-pointer">
+            <span class="text-[9px] sm:text-[10px] font-mono font-bold text-purple-800 bg-purple-100 px-1.5 py-0.2 rounded mb-1">LOT 06</span>
+            <span class="text-xs sm:text-sm font-black font-serif text-printInk group-hover:text-roselleRed transition leading-tight">田野換禮</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 今日雞舍值日生簽到欄便箋 -->
+      <div class="bg-white/85 rounded-2xl p-5 border border-printInk/15 shadow-sm relative rotate-[-0.5deg]">
+        <div class="tape-strip -top-3 left-8 rotate-[-3deg] opacity-80"></div>
+        <div class="flex items-center justify-between border-b border-printInk/10 pb-3 mb-3">
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-clipboard-check text-roselleRed"></i>
+            <span class="font-serif font-black text-xs text-printInk">農學願雞舍田野日誌・值日簽到欄</span>
+          </div>
+          <span class="text-[11px] font-mono text-pencilGray">基地編號：LOT#5WAY-2026</span>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs text-printInk/85 font-serif">
+          <div>
+            <span class="text-[10px] text-pencilGray font-sans block">駐點基地</span>
+            <span class="font-bold text-printInk">豐田農學願友善雞舍</span>
+          </div>
+          <div>
+            <span class="text-[10px] text-pencilGray font-sans block">常駐師資</span>
+            <span class="font-bold text-roselleRed font-mono">10 隻伊莎蛋雞</span>
+          </div>
+          <div>
+            <span class="text-[10px] text-pencilGray font-sans block">累計厚殼好蛋</span>
+            <span class="font-bold font-mono text-eggShell">182 顆 (完整產出)</span>
+          </div>
+          <div>
+            <span class="text-[10px] text-pencilGray font-sans block">長青共同照料</span>
+            <span class="font-bold text-emerald-800">林魏秀阿嬤 晨巡傳承</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <!-- 區塊 01：緣起理念 ✕ 四大教育維度 (BLOCK 01)                       -->
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <section id="block-1" class="snap-section min-h-[90dvh] sm:min-h-screen flex flex-col justify-center py-6 sm:py-10">
+      <div class="bg-white/90 rounded-3xl p-5 sm:p-10 border border-printInk/15 shadow-md relative">
+        <!-- 頂部卡片固定標題列 -->
+        <div class="flex items-center justify-between border-b-2 border-printInk/10 pb-3 mb-6">
+          <h2 class="text-lg sm:text-2xl font-black font-serif text-printInk">緣起理念 ✕ 四大教育維度</h2>
+          <a href="#cover" class="text-xs font-mono font-bold text-pencilGray hover:text-roselleRed transition flex items-center gap-1 shrink-0">
+            <i class="fa-solid fa-arrow-up text-[10px]"></i>
+            <span>回蛋盒</span>
+          </a>
+        </div>
+
+        <!-- 區塊內容自然向下展開 -->
+        <div class="space-y-8">
+          <!-- 01 緣起內容 -->
+          <div id="origin" class="scroll-mt-20">
+            <div class="flex items-center justify-between border-b border-printInk/10 pb-2 mb-4">
+              <span class="text-xs font-mono font-bold text-kraftDark">FIELD STORY・從農到牧的開端</span>
+              <span class="text-[11px] font-mono text-eggShell font-bold px-2 py-0.5 rounded bg-eggWarm/10 border border-eggWarm/20">
+                DATE: 2026 夏季
+              </span>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+              <div class="lg:col-span-7 space-y-3 text-xs sm:text-sm leading-relaxed text-printInk/90 font-serif">
+                <p>
+                  「豐田五味屋」（花蓮縣鄉村社區大學發展協會）深耕陪伴在地偏鄉兒少 <span class="highlight-marker font-bold">18 年</span>。在豐田火車站旁的生態農學基地「農學願」，孩子們習慣了親手翻土、種植稻寶米與洛神花。
+                </p>
+                <p>
+                  2026 年，東華大學「聞雞起舞」青年團隊進駐，攜手東華特聘教授顧瑜君與獸醫師李宏韡，並串接黎明方舟牧場的畜牧專業，帶領國中小兒少在農學願搭建符合國際動物福利標準的友善雞舍，促成<span class="highlight-marker font-bold">「四生」（生活、生態、生計、生命）</span>的全面實踐。
+                </p>
+                <div class="p-3 bg-[#FFFDE6] rounded-xl border border-amber-200 text-[11px] sm:text-xs text-printInk/80 flex items-start gap-2 rotate-[-0.5deg] shadow-2xs">
+                  <i class="fa-solid fa-feather-pointed text-amber-700 mt-0.5"></i>
+                  <div>
+                    <strong class="font-bold text-amber-900">田野筆記便籤：</strong>
+                    <span>從過去「單向受助」，轉為孩子自己做雞舍的主人、蛋雞的老師與長照阿嬤的晨間守護者。</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="lg:col-span-5">
+                <div class="polaroid-card rotate-1 max-w-xs mx-auto">
+                  <div class="tape-strip -top-3.5 right-6 rotate-3"></div>
+                  <img src="web_assets/images/about/visit_farm.jpg" alt="參訪黎明方舟牧場" class="w-full h-44 sm:h-52 object-cover rounded">
+                  <p class="text-[10px] sm:text-[11px] font-mono text-center text-pencilGray mt-2">
+                    2026.05.30 兒少赴壽豐黎明方舟牧場見習非籠飼實作
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 02 四大維度內容 -->
+          <div id="dimensions" class="scroll-mt-20 pt-4 border-t border-printInk/10">
+            <div class="text-center mb-6">
+              <span class="text-xs font-bold text-roselleRed tracking-widest font-mono">DIMENSIONS NOTE</span>
+              <h3 class="text-lg sm:text-xl font-black font-serif text-printInk mt-0.5">從農到牧：四大核心教育維度</h3>
+              <p class="text-xs text-pencilGray font-serif mt-0.5">撕下生活便籤，打破單向講授，建立偏鄉兒少的自信與跨代連結</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+              <!-- 便利貼 1 -->
+              <div class="sticky-note bg-[#FFF9A6] p-5 text-printInk rotate-[-1.2deg] border border-amber-200">
+                <div class="tape-strip -top-3 left-4 -rotate-6 opacity-75"></div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <span class="text-[11px] font-mono font-bold text-amber-900 bg-amber-100/60 px-2 py-0.5 rounded">
+                    LOT#EDU-01 自然科學
+                  </span>
+                  <div class="w-7 h-7 rounded-full bg-amber-200/60 flex items-center justify-center text-amber-800 text-xs">
+                    <i class="fa-solid fa-flask"></i>
+                  </div>
+                </div>
+                <h4 class="text-base font-black font-serif mb-1.5 text-amber-950">1. 科學體感</h4>
+                <p class="text-xs leading-relaxed text-printInk/85 font-serif">
+                  透過 Google 表單與 Apps Script 自動計算「料蛋比（FCR）」，以中央氣象署東華觀測站即時溫濕度落實防熱防寒科學調控，讓孩子在日常中建立數位數據素養。
+                </p>
+                <div class="mt-3 pt-2 border-t border-amber-300/60 flex items-center justify-between text-[10px] text-amber-900 font-mono">
+                  <span>數據驅動</span>
+                  <span class="font-bold">氣象 API ✕ FCR 調控</span>
+                </div>
+              </div>
+
+              <!-- 便利貼 2 -->
+              <div class="sticky-note bg-[#E1F8DC] p-5 text-printInk rotate-[1deg] border border-emerald-200">
+                <div class="tape-strip -top-3 right-4 rotate-3 opacity-75"></div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <span class="text-[11px] font-mono font-bold text-emerald-900 bg-emerald-100/60 px-2 py-0.5 rounded">
+                    LOT#EDU-02 責任承諾
+                  </span>
+                  <div class="w-7 h-7 rounded-full bg-emerald-200/60 flex items-center justify-center text-emerald-800 text-xs">
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+                  </div>
+                </div>
+                <h4 class="text-base font-black font-serif mb-1.5 text-emerald-950">2. 責任承諾</h4>
+                <p class="text-xs leading-relaxed text-printInk/85 font-serif">
+                  招商大會嚴選職務分工，簽署《生命守護誓約書》，堅持「不水洗、酒精輕拭」嚴謹 SOP，守護鮮蛋保護膜，體會對生命的敬畏與職人承諾。
+                </p>
+                <div class="mt-3 pt-2 border-t border-emerald-300/60 flex items-center justify-between text-[10px] text-emerald-900 font-mono">
+                  <span>自主管理</span>
+                  <span class="font-bold">誓約書 ✕ 酒精輕拭 SOP</span>
+                </div>
+              </div>
+
+              <!-- 便利貼 3 -->
+              <div class="sticky-note bg-[#D8EEFD] p-5 text-printInk rotate-[0.8deg] border border-blue-200">
+                <div class="tape-strip -top-3 left-4 -rotate-3 opacity-75"></div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <span class="text-[11px] font-mono font-bold text-blue-900 bg-blue-100/60 px-2 py-0.5 rounded">
+                    LOT#EDU-03 地方記憶
+                  </span>
+                  <div class="w-7 h-7 rounded-full bg-blue-200/60 flex items-center justify-center text-blue-800 text-xs">
+                    <i class="fa-solid fa-book-open-reader"></i>
+                  </div>
+                </div>
+                <h4 class="text-base font-black font-serif mb-1.5 text-blue-950">3. 地方歷史</h4>
+                <p class="text-xs leading-relaxed text-printInk/85 font-serif">
+                  帶著自產新鮮雞蛋走入豐田村落，深度訪談 4 戶早年養雞耆老，記錄傳統農家放養文化與青銀生活記憶，將長輩口述化為社區珍貴文化檔案。
+                </p>
+                <div class="mt-3 pt-2 border-t border-blue-300/60 flex items-center justify-between text-[10px] text-blue-900 font-mono">
+                  <span>田野探訪</span>
+                  <span class="font-bold">4 戶耆老口述歷史</span>
+                </div>
+              </div>
+
+              <!-- 便利貼 4 -->
+              <div class="sticky-note bg-[#F3E5F5] p-5 text-printInk rotate-[-1.5deg] border border-purple-200">
+                <div class="tape-strip -top-3 right-4 rotate-6 opacity-75"></div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <span class="text-[11px] font-mono font-bold text-purple-900 bg-purple-100/60 px-2 py-0.5 rounded">
+                    LOT#EDU-04 社會處方
+                  </span>
+                  <div class="w-7 h-7 rounded-full bg-purple-200/60 flex items-center justify-center text-purple-800 text-xs">
+                    <i class="fa-solid fa-people-roof"></i>
+                  </div>
+                </div>
+                <h4 class="text-base font-black font-serif mb-1.5 text-purple-950">4. 社區客廳</h4>
+                <p class="text-xs leading-relaxed text-printInk/85 font-serif">
+                  翻轉社區長輩為「傳承導師」。林魏秀阿嬤晨巡共同照料，雞舍成為村莊公共交會處，實踐長照「社會處方箋」，建立跨世代互助網絡。
+                </p>
+                <div class="mt-3 pt-2 border-t border-purple-300/60 flex items-center justify-between text-[10px] text-purple-900 font-mono">
+                  <span>青銀協力</span>
+                  <span class="font-bold">阿嬤晨巡 ✕ 社會處方箋</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <!-- 區塊 02：自造日誌 ✕ 生命紀錄片 (BLOCK 02)                         -->
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <section id="block-2" class="snap-section min-h-[90dvh] sm:min-h-screen flex flex-col justify-center py-6 sm:py-10">
+      <div class="bg-white/90 rounded-3xl p-5 sm:p-10 border border-printInk/15 shadow-md relative">
+        <!-- 頂部固定標題列 -->
+        <div class="flex items-center justify-between border-b-2 border-printInk/10 pb-3 mb-6">
+          <h2 class="text-lg sm:text-2xl font-black font-serif text-printInk">自造日誌 ✕ 生命紀錄片</h2>
+          <a href="#cover" class="text-xs font-mono font-bold text-pencilGray hover:text-roselleRed transition flex items-center gap-1 shrink-0">
+            <i class="fa-solid fa-arrow-up text-[10px]"></i>
+            <span>回蛋盒</span>
+          </a>
+        </div>
+
+        <!-- 區塊內容自然向下展開 -->
+        <div class="space-y-8">
+          <!-- 03 自造友善雞舍工程日誌 -->
+          <div id="logbook" class="scroll-mt-20">
+            <div class="flex items-center justify-between border-b border-printInk/10 pb-2 mb-6">
+              <span class="text-xs font-mono font-bold text-roselleRed">CONSTRUCTION TIMELINE</span>
+              <span class="text-xs font-mono text-pencilGray">2026.05 - 08 全程見證</span>
+            </div>
+
+            <div class="space-y-8 relative before:absolute before:inset-0 before:left-3.5 before:w-0.5 before:bg-printInk/15">
+              <!-- 05/30 牧場見習 -->
+              <div class="relative pl-10">
+                <span class="absolute left-2 top-1.5 w-3.5 h-3.5 rounded-full bg-roselleRed ring-4 ring-white"></span>
+                <span class="text-xs font-mono font-bold text-roselleRed bg-roselleRed/10 px-2 py-0.5 rounded">05/30 牧場見習</span>
+                <h4 class="font-bold text-sm text-printInk mt-1 mb-3.5 relative z-10">前往壽豐黎明方舟牧場，學習非籠飼空間與母雞習性。</h4>
+                <div class="mt-7 polaroid-card max-w-sm rotate-1">
+                  <div class="tape-strip -top-3.5 right-6 rotate-2"></div>
+                  <img src="web_assets/images/gallery/0530_01_visit_farm.jpg" alt="壽豐黎明方舟牧場見習" class="w-full h-44 object-cover rounded">
+                  <p class="text-[11px] text-pencilGray text-center mt-2 font-mono">壽豐黎明方舟牧場實地見習母雞飼育空間</p>
+                </div>
+              </div>
+
+              <!-- 06/06 木構組裝 -->
+              <div class="relative pl-10">
+                <span class="absolute left-2 top-1.5 w-3.5 h-3.5 rounded-full bg-kraftDark ring-4 ring-white"></span>
+                <span class="text-xs font-mono font-bold text-kraftDark bg-kraft/20 px-2 py-0.5 rounded">06/06 木構組裝</span>
+                <h4 class="font-bold text-sm text-printInk mt-1 mb-3.5 relative z-10">青年與兒少合力組裝雞舍木構主體，仔細核對螺絲與通風排架。</h4>
+                <div class="mt-7 polaroid-card max-w-sm -rotate-1">
+                  <div class="tape-strip -top-3.5 left-6 -rotate-2"></div>
+                  <img src="web_assets/images/gallery/0606_05_timber_assembly.jpg" alt="青年與兒少合力組裝木構主體" class="w-full h-44 object-cover rounded">
+                  <p class="text-[11px] text-pencilGray text-center mt-2 font-mono">青年與兒少合力組裝木構雞舍主體</p>
+                </div>
+              </div>
+
+              <!-- 07/25 招商誓約 -->
+              <div class="relative pl-10">
+                <span class="absolute left-2 top-1.5 w-3.5 h-3.5 rounded-full bg-blue-600 ring-4 ring-white"></span>
+                <span class="text-xs font-mono font-bold text-blue-600 bg-blue-50 px-2 py-0.5 rounded">07/25 招商誓約</span>
+                <h4 class="font-bold text-sm text-printInk mt-1 mb-3.5 relative z-10">兒少齊聚招商大會簽署《生命守護誓約書》，分工值日任務。</h4>
+                <div class="mt-7 polaroid-card max-w-sm rotate-2">
+                  <div class="tape-strip -top-3.5 right-6 rotate-3"></div>
+                  <img src="web_assets/images/gallery/0725_09_recruitment_pledge.jpg" alt="簽署生命守護誓約書" class="w-full h-44 object-cover rounded">
+                  <p class="text-[11px] text-pencilGray text-center mt-2 font-mono">兒少簽署《生命守護誓約書》認養守護任務</p>
+                </div>
+              </div>
+
+              <!-- 08/03 專家指導 -->
+              <div class="relative pl-10">
+                <span class="absolute left-2 top-1.5 w-3.5 h-3.5 rounded-full bg-emerald-600 ring-4 ring-white"></span>
+                <span class="text-xs font-mono font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">08/03 獸醫檢核</span>
+                <h4 class="font-bold text-sm text-printInk mt-1 mb-3.5 relative z-10">李宏韡獸醫師實地檢驗雞舍合規度，針對棲架高度與避風應變提出修正建議。</h4>
+                <div class="mt-7 polaroid-card max-w-sm rotate-1">
+                  <div class="tape-strip -top-3.5 right-6 rotate-2"></div>
+                  <img src="web_assets/images/coop-building/0803_hongwei_teacher_25.jpg" alt="李宏韡獸醫師專業檢核" class="w-full h-44 object-cover rounded">
+                  <p class="text-[11px] text-pencilGray text-center mt-2 font-mono">李宏韡老師檢查雞舍是否符合動物福利規範</p>
+                </div>
+              </div>
+
+              <!-- 08/09 蛋箱改雙格 (原 08/11) -->
+              <div class="relative pl-10">
+                <span class="absolute left-2 top-1.5 w-3.5 h-3.5 rounded-full bg-purple-600 ring-4 ring-white"></span>
+                <span class="text-xs font-mono font-bold text-purple-600 bg-purple-50 px-2 py-0.5 rounded">08/09 蛋箱改雙格</span>
+                <h4 class="font-bold text-sm text-printInk mt-1 mb-3.5 relative z-10">將原本三個格子改成兩個格子的寬敞蛋箱，並鋪上厚實粗糠墊料。</h4>
+                <div class="mt-7 polaroid-card max-w-sm rotate-2">
+                  <div class="tape-strip -top-3.5 right-6 rotate-3"></div>
+                  <img src="web_assets/images/specs/spec_0811_nestbox_2grid.jpg" alt="蛋箱改雙格與厚鋪粗糠" class="w-full h-44 object-cover rounded">
+                  <p class="text-[11px] text-pencilGray text-center mt-2 font-mono">寬敞雙格產蛋箱，母雞轉身自如</p>
+                </div>
+              </div>
+
+              <!-- 08/10 10隻雞進駐雞舍 ＆ 首顆好蛋 -->
+              <div class="relative pl-10">
+                <span class="absolute left-2 top-1.5 w-3.5 h-3.5 rounded-full bg-amber-600 ring-4 ring-white"></span>
+                <span class="text-xs font-mono font-bold text-amber-600 bg-amber-50 px-2 py-0.5 rounded">08/10 迎雞進駐 ✕ 首顆好蛋</span>
+                <h4 class="font-bold text-sm text-printInk mt-1 mb-3.5 relative z-10">10 隻產蛋母雞順利進駐新雞舍，掛上溫濕度計即時監控，午後母雞產下第一顆溫潤好蛋！</h4>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-7 max-w-xl">
+                  <div class="polaroid-card rotate-[-1deg]">
+                    <div class="tape-strip -top-3.5 left-6 -rotate-2"></div>
+                    <img src="web_assets/images/coop-building/chicken_arrival.jpg" alt="10隻母雞順利進駐雞舍" class="w-full h-40 object-cover rounded">
+                    <p class="text-[10px] text-pencilGray text-center mt-2 font-mono">10 隻母雞老師健康進駐農學願新家</p>
+                  </div>
+                  <div class="polaroid-card rotate-[1deg]">
+                    <div class="tape-strip -top-3.5 right-6 rotate-2"></div>
+                    <img src="web_assets/images/specs/spec_0810_temp_meter.jpg" alt="雞舍溫濕度監測計" class="w-full h-40 object-cover rounded">
+                    <p class="text-[10px] text-pencilGray text-center mt-2 font-mono">溫濕度計監測微氣候，喜迎首顆蛋</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 04 成果紀錄片 -->
+          <div id="video-section" class="scroll-mt-20 pt-6 border-t border-printInk/10">
+            <div class="border-b border-printInk/10 pb-3 mb-4">
+              <span class="text-xs font-mono font-bold text-roselleRed uppercase">DOCUMENTARY FILM</span>
+              <h3 class="text-lg sm:text-xl font-black font-serif text-printInk mt-0.5">雞鳴豐田：兒少與青年的生命紀實</h3>
+              <p class="text-xs text-pencilGray font-serif mt-0.5">從整地、蓋舍、迎雞到日常照護，完整記錄這段跨代協力、生命共學的動人旅程</p>
+            </div>
+
+            <!-- YouTube 影院相框 -->
+            <div class="max-w-3xl mx-auto">
+              <div class="p-2 sm:p-3 bg-pulpDark rounded-2xl shadow-inner border border-pulpDeeper">
+                <div class="video-container shadow-md bg-black rounded-xl overflow-hidden">
+                  <iframe
+                    src="https://www.youtube.com/embed/XY_cvZ4_GZw"
+                    title="雞鳴豐田成果紀錄片"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                  </iframe>
+                </div>
+              </div>
+              <div class="flex items-center justify-between flex-wrap gap-2 mt-3 px-1 text-xs">
+                <span class="text-printInk/70 font-serif">
+                  💡 點擊播放即可直接在網頁中完整收看建置與育成的動人點滴。
+                </span>
+                <a href="https://youtu.be/XY_cvZ4_GZw" target="_blank" rel="noopener noreferrer"
+                  class="inline-flex items-center gap-1 font-bold text-roselleRed hover:text-red-700 hover:underline">
+                  在 YouTube 上開啟 <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <!-- 區塊 03：動物福利 ✕ 十位雞老師 (BLOCK 03)                         -->
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <section id="block-3" class="snap-section min-h-[90dvh] sm:min-h-screen flex flex-col justify-center py-6 sm:py-10">
+      <div class="bg-white/90 rounded-3xl p-5 sm:p-10 border border-printInk/15 shadow-md relative">
+        <!-- 頂部固定標題列 -->
+        <div class="flex items-center justify-between border-b-2 border-printInk/10 pb-3 mb-6">
+          <h2 class="text-lg sm:text-2xl font-black font-serif text-printInk">動物福利標識 ✕ 十位雞老師</h2>
+          <a href="#cover" class="text-xs font-mono font-bold text-pencilGray hover:text-roselleRed transition flex items-center gap-1 shrink-0">
+            <i class="fa-solid fa-arrow-up text-[10px]"></i>
+            <span>回蛋盒</span>
+          </a>
+        </div>
+
+        <!-- 區塊內容自然向下展開 -->
+        <div class="space-y-8">
+          <!-- 05 動物福利標識卡 -->
+          <div id="welfare-label" class="scroll-mt-20 bg-white rounded-2xl p-6 sm:p-8 border-2 border-printInk shadow-md relative overflow-hidden">
+            <!-- 右上角紅色雙環動福檢驗印章 -->
+            <div class="absolute top-4 right-4 rubber-stamp w-16 h-16 sm:w-20 sm:h-20 text-[8px] sm:text-[9px] rotate-[-8deg]">
+              <span>動福規章</span>
+              <span class="text-xs font-black my-0.5">合格標章</span>
+              <span>放牧飼養</span>
+            </div>
+
+            <div class="border-b-2 border-printInk pb-3 mb-5 pr-20">
+              <span class="text-[10px] font-mono font-black uppercase text-roselleRed">NUTRITION & WELFARE STANDARDS</span>
+              <h3 class="text-xl sm:text-2xl font-black font-mono text-printInk">動物福利標識卡</h3>
+              <p class="text-xs text-pencilGray font-serif mt-0.5">依據友善雞蛋聯盟放牧飼養（Free-Range）標準全項檢核</p>
+            </div>
+
+            <!-- 標示表格 -->
+            <table class="w-full text-xs font-mono border-collapse mb-5">
+              <tbody>
+                <tr class="border-b border-printInk/20">
+                  <td class="py-2 font-bold w-1/3 text-printInk/70">品名規格</td>
+                  <td class="py-2 text-printInk font-bold">五味屋兒少友善動福鮮蛋</td>
+                </tr>
+                <tr class="border-b border-printInk/20">
+                  <td class="py-2 font-bold text-printInk/70">飼養方式</td>
+                  <td class="py-2 text-emerald-800 font-bold">放牧飼養</td>
+                </tr>
+                <tr class="border-b border-printInk/20">
+                  <td class="py-2 font-bold text-printInk/70">飼養密度</td>
+                  <td class="py-2 text-printInk">3.5 隻/m²（國際標準需 &lt; 9 隻/m²，達標 100%）</td>
+                </tr>
+                <tr class="border-b border-printInk/20">
+                  <td class="py-2 font-bold text-printInk/70">蛋殼清潔工法</td>
+                  <td class="py-2 text-printInk">
+                    <span class="highlight-marker font-bold">堅持不水洗，完整保留天然護膜！</span>以 75% 酒精輕拭地板蛋。
+                  </td>
+                </tr>
+                <tr class="border-b border-printInk/20">
+                  <td class="py-2 font-bold text-printInk/70">墊料來源</td>
+                  <td class="py-2 text-printInk">五味屋自種「稻寶米」稻殼粗糠 ✕ 黃福康木工坊天然無毒木屑</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- 五大自由標章手帳打勾清單 -->
+            <div class="p-4 bg-pulp rounded-xl border border-pulpDeeper space-y-2">
+              <h4 class="font-bold text-xs font-mono mb-1.5 text-printInk flex items-center gap-1.5">
+                <i class="fa-solid fa-clipboard-list text-roselleRed"></i>
+                <span>動物福利五大自由日常承諾清單：</span>
+              </h4>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-printInk/85 font-serif">
+                <div class="flex items-center gap-1.5">
+                  <i class="fa-solid fa-square-check text-emerald-700"></i>
+                  <span>免受飢渴：自動純淨飲水＋均衡穀物洛神葉</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <i class="fa-solid fa-square-check text-emerald-700"></i>
+                  <span>免受不適：挑高 120cm 乾爽通風對流無異味</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <i class="fa-solid fa-square-check text-emerald-700"></i>
+                  <span>免受傷害：李宏韡獸醫定期巡檢、堅持不剪喙</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <i class="fa-solid fa-square-check text-emerald-700"></i>
+                  <span>表達天性：大片沙浴土地＋杉木雙層棲架高低飛躍</span>
+                </div>
+                <div class="sm:col-span-2 flex items-center gap-1.5">
+                  <i class="fa-solid fa-square-check text-emerald-700"></i>
+                  <span>免受緊迫：防犬鼠細密金屬圍網＋兒少不喧嘩溫柔抱雞 SOP</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 06 雞老師：10 位雞老師拍立得手帳觀察日誌 -->
+          <div id="chickens-profile" class="scroll-mt-20 pt-4 border-t border-printInk/10">
+            <div class="flex items-center justify-between mb-6 border-b border-printInk/10 pb-3">
+              <div>
+                <span class="text-xs font-mono font-bold text-roselleRed">OBSERVATION LOG</span>
+                <h3 class="text-lg sm:text-xl font-black font-serif text-printInk mt-0.5">走進雞舍：10 位「雞老師」觀察手帳</h3>
+                <p class="text-xs text-pencilGray font-serif mt-0.5">每一隻母雞都有兒少親自賦予的名字與性格日記，是孩子們最真摯的生命學習導師</p>
+              </div>
+              <span class="text-xs text-pencilGray font-mono bg-white px-2.5 py-1 rounded border border-printInk/15">
+                10 隻全體入住
+              </span>
+            </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+        <!-- 雞 1 -->
+        <div class="polaroid-card -rotate-2">
+          <img src="web_assets/images/chickens/chicken_01.jpg" alt="01 夏天" class="w-full aspect-square object-cover rounded">
+          <h4 class="font-bold text-xs text-printInk mt-2">01 夏天</h4>
+          <span class="text-[10px] text-amber-700 bg-amber-50 px-1.5 py-0.5 rounded block w-fit mt-0.5">熱情迎賓</span>
+          <p class="text-[10px] text-pencilGray mt-1 line-clamp-2">雞冠鮮紅挺拔，羽色溫潤金黃，常率先走向門口迎接孩子。</p>
+        </div>
+
+        <!-- 雞 2 -->
+        <div class="polaroid-card rotate-1">
+          <img src="web_assets/images/chickens/chicken_02.jpg" alt="02 星星" class="w-full aspect-square object-cover rounded">
+          <h4 class="font-bold text-xs text-printInk mt-2">02 星星</h4>
+          <span class="text-[10px] text-blue-700 bg-blue-50 px-1.5 py-0.5 rounded block w-fit mt-0.5">高空哨兵</span>
+          <p class="text-[10px] text-pencilGray mt-1 line-clamp-2">眼神明亮銳利，警覺性高，最喜歡跳上最高層棲架俯瞰。</p>
+        </div>
+
+        <!-- 雞 3 -->
+        <div class="polaroid-card rotate-2">
+          <img src="web_assets/images/chickens/chicken_03.jpg" alt="03 跑跑" class="w-full aspect-square object-cover rounded">
+          <h4 class="font-bold text-xs text-printInk mt-2">03 跑跑</h4>
+          <span class="text-[10px] text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded block w-fit mt-0.5">健步如飛</span>
+          <p class="text-[10px] text-pencilGray mt-1 line-clamp-2">雙腿修長，開門時第一個衝出草地奔跑，啄食雜草最賣力。</p>
+        </div>
+
+        <!-- 雞 4 -->
+        <div class="polaroid-card -rotate-1">
+          <img src="web_assets/images/chickens/chicken_04.jpg" alt="04 小白" class="w-full aspect-square object-cover rounded">
+          <h4 class="font-bold text-xs text-printInk mt-2">04 小白</h4>
+          <span class="text-[10px] text-purple-700 bg-purple-50 px-1.5 py-0.5 rounded block w-fit mt-0.5">溫順親人</span>
+          <p class="text-[10px] text-pencilGray mt-1 line-clamp-2">尾羽帶微白斑，性格溫柔安靜，最喜歡讓小朋友輕輕撫摸。</p>
+        </div>
+
+        <!-- 雞 5 -->
+        <div class="polaroid-card rotate-3">
+          <img src="web_assets/images/chickens/chicken_05.jpg" alt="05 小黑雞" class="w-full aspect-square object-cover rounded">
+          <h4 class="font-bold text-xs text-printInk mt-2">05 小黑雞</h4>
+          <span class="text-[10px] text-gray-700 bg-gray-100 px-1.5 py-0.5 rounded block w-fit mt-0.5">吃貨擔當</span>
+          <p class="text-[10px] text-pencilGray mt-1 line-clamp-2">背部羽毛深沉，胃口絕佳，對值日生手上的麥片零食完全著迷。</p>
+        </div>
+
+        <!-- 雞 6 -->
+        <div class="polaroid-card -rotate-2">
+          <img src="web_assets/images/chickens/chicken_06.jpg" alt="06 莉兒" class="w-full aspect-square object-cover rounded">
+          <h4 class="font-bold text-xs text-printInk mt-2">06 莉兒</h4>
+          <span class="text-[10px] text-pink-700 bg-pink-50 px-1.5 py-0.5 rounded block w-fit mt-0.5">精緻優雅</span>
+          <p class="text-[10px] text-pencilGray mt-1 line-clamp-2">體型小巧精緻，羽毛梳理得一絲不苟，下蛋時特別專注安詳。</p>
+        </div>
+
+        <!-- 雞 7 -->
+        <div class="polaroid-card rotate-1">
+          <img src="web_assets/images/chickens/chicken_07.jpg" alt="07 孤雞" class="w-full aspect-square object-cover rounded">
+          <h4 class="font-bold text-xs text-printInk mt-2">07 孤雞</h4>
+          <span class="text-[10px] text-amber-800 bg-amber-50 px-1.5 py-0.5 rounded block w-fit mt-0.5">沙浴霸王</span>
+          <p class="text-[10px] text-pencilGray mt-1 line-clamp-2">特立獨行沉穩冷靜，最喜歡獨自霸佔專屬木箱悠閒洗沙浴。</p>
+        </div>
+
+        <!-- 雞 8 -->
+        <div class="polaroid-card -rotate-1">
+          <img src="web_assets/images/chickens/chicken_08.jpg" alt="08 猴子" class="w-full aspect-square object-cover rounded">
+          <h4 class="font-bold text-xs text-printInk mt-2">08 猴子</h4>
+          <span class="text-[10px] text-red-700 bg-red-50 px-1.5 py-0.5 rounded block w-fit mt-0.5">好奇寶寶</span>
+          <p class="text-[10px] text-pencilGray mt-1 line-clamp-2">好奇心最強烈，喜歡歪著頭盯著量杯或手機鏡頭看，動作逗趣。</p>
+        </div>
+
+        <!-- 雞 9 -->
+        <div class="polaroid-card rotate-2">
+          <img src="web_assets/images/chickens/chicken_09.jpg" alt="09 花雞" class="w-full aspect-square object-cover rounded">
+          <h4 class="font-bold text-xs text-printInk mt-2">09 花雞</h4>
+          <span class="text-[10px] text-emerald-800 bg-emerald-50 px-1.5 py-0.5 rounded block w-fit mt-0.5">阿嬤最愛</span>
+          <p class="text-[10px] text-pencilGray mt-1 line-clamp-2">雙翅斑紋層次分明如花斑，與社區阿嬤最有緣，餵食時會乖乖蹲下。</p>
+        </div>
+
+        <!-- 雞 10 -->
+        <div class="polaroid-card -rotate-3">
+          <img src="web_assets/images/chickens/chicken_10.jpg" alt="10 Chicken" class="w-full aspect-square object-cover rounded">
+          <h4 class="font-bold text-xs text-printInk mt-2">10 Chicken</h4>
+          <span class="text-[10px] text-yellow-800 bg-yellow-50 px-1.5 py-0.5 rounded block w-fit mt-0.5">金蛋母雞</span>
+          <p class="text-[10px] text-pencilGray mt-1 line-clamp-2">產出的雞蛋圓潤厚實，是產蛋巢箱最常客，也是孩子心目中的明星。</p>
+        </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <!-- 區塊 04：產蛋數據 ✕ 科技賦能 (BLOCK 04)                         -->
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <section id="block-4" class="snap-section min-h-[90dvh] sm:min-h-screen flex flex-col justify-center py-6 sm:py-10">
+      <div class="bg-white/90 rounded-3xl p-5 sm:p-10 border border-printInk/15 shadow-md relative">
+        <!-- 頂部固定標題列 -->
+        <div class="flex items-center justify-between border-b-2 border-printInk/10 pb-3 mb-6">
+          <h2 class="text-lg sm:text-2xl font-black font-serif text-printInk">產蛋數據 ✕ 科技賦能</h2>
+          <a href="#cover" class="text-xs font-mono font-bold text-pencilGray hover:text-roselleRed transition flex items-center gap-1 shrink-0">
+            <i class="fa-solid fa-arrow-up text-[10px]"></i>
+            <span>回蛋盒</span>
+          </a>
+        </div>
+
+        <!-- 區塊內容自然向下展開 -->
+        <div class="space-y-8">
+          <!-- 07 產蛋大數據 -->
+          <div id="data" class="scroll-mt-20 bg-[#F2EADB] rounded-2xl p-6 sm:p-8 border border-pulpDeeper shadow-sm relative">
+            <div class="flex items-center justify-between border-b border-printInk/15 pb-3 mb-4">
+              <div>
+                <span class="text-xs font-mono font-bold text-roselleRed">EGG DOT MATRIX & TALLY</span>
+                <h3 class="text-xl sm:text-2xl font-black font-serif text-printInk">182 顆蛋形點陣圖鑑與手寫記號</h3>
+              </div>
+              <span class="text-[11px] font-mono font-bold text-printInk bg-white px-2.5 py-1 rounded-full border border-printInk/20 shadow-2xs">
+                截至 2026/09/14 結案統計
+              </span>
+            </div>
+
+            <p class="text-xs sm:text-sm text-printInk/80 mb-4 font-serif leading-relaxed">
+              自 2026/08/10 產下第一顆蛋至 2026/09/14，累積 69 筆真實值日生雲端紀錄。每一顆小蛋代表一顆實體採收之厚殼好蛋，其中紅框標示出破損率（僅 5.5%，遠低於初期）：
+            </p>
+
+            <!-- 182 顆蛋點陣視覺排布 -->
+            <div class="p-4 sm:p-6 bg-white rounded-xl border border-printInk/15 mb-4 shadow-2xs">
+              <div class="flex flex-wrap gap-1.5 sm:gap-2 justify-center items-center max-w-2xl mx-auto" id="egg-matrix-container">
+                <!-- 程式碼動態生成 182 顆小蛋 -->
+              </div>
+              <div class="flex items-center justify-center gap-5 mt-3 pt-3 border-t border-gray-100 text-xs font-mono">
+                <span class="flex items-center gap-1.5">
+                  <span class="w-3 h-3.5 rounded-full inline-block shadow-2xs" style="background: radial-gradient(circle at 35% 30%, #FEE8D6 0%, #F49B55 60%, #B84A12 100%); border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;"></span>
+                  <span>合格好蛋 (172 顆)</span>
+                </span>
+                <span class="flex items-center gap-1.5">
+                  <span class="w-3 h-3.5 rounded-full bg-roselleRed inline-block shadow-2xs" style="border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;"></span>
+                  <span>碰撞破損 (10 顆 / 5.5%)</span>
+                </span>
+              </div>
+            </div>
+
+            <!-- 四大手帳數據指標方塊 -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center font-mono">
+              <div class="p-3 bg-white/80 rounded-xl border border-printInk/10 shadow-2xs">
+                <span class="text-[11px] text-printInk/60 block">累計收蛋</span>
+                <span class="text-xl sm:text-2xl font-black text-eggShell">182 顆</span>
+                <span class="text-[9px] text-pencilGray block mt-0.5">全歷程達220顆</span>
+              </div>
+              <div class="p-3 bg-white/80 rounded-xl border border-printInk/10 shadow-2xs">
+                <span class="text-[11px] text-printInk/60 block">平均單顆重</span>
+                <span class="text-xl sm:text-2xl font-black text-printInk">58.4 g</span>
+                <span class="text-[9px] text-pencilGray block mt-0.5">特級厚殼大蛋</span>
+              </div>
+              <div class="p-3 bg-white/80 rounded-xl border border-printInk/10 shadow-2xs">
+                <span class="text-[11px] text-printInk/60 block">日常產蛋率</span>
+                <span class="text-xl sm:text-2xl font-black text-printInk">75%~80%</span>
+                <span class="text-[9px] text-pencilGray block mt-0.5">穩定育成曲線</span>
+              </div>
+              <div class="p-3 bg-white/80 rounded-xl border border-printInk/10 shadow-2xs">
+                <span class="text-[11px] text-printInk/60 block">破損率改善</span>
+                <span class="text-xl sm:text-2xl font-black text-roselleRed">降至 5.5%</span>
+                <span class="text-[9px] text-pencilGray block mt-0.5">加厚粗糠奏效</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 08 科技與自造硬體 -->
+          <div id="specs" class="scroll-mt-20 pt-4 border-t border-printInk/10 space-y-4">
+            <div class="text-center mb-4">
+              <span class="text-xs font-mono font-bold text-roselleRed uppercase">HARDWARE & TECH</span>
+              <h3 class="text-lg sm:text-xl font-black font-serif text-printInk mt-0.5">友善雞舍加工改造 ✕ 數位管理系統</h3>
+              <p class="text-xs text-pencilGray font-serif mt-0.5">加工改造原有雞舍 ✕ 高中生自主研發 Apps Script 雲端值日表單</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <!-- 蛋箱雙格拍立得 -->
+              <div class="polaroid-card rotate-[-1deg]">
+                <div class="tape-strip -top-3.5 left-6 -rotate-3"></div>
+                <img src="web_assets/images/specs/spec_0811_nestbox_2grid.jpg" alt="雙格蛋箱" class="w-full h-44 sm:h-48 object-cover rounded mb-1.5">
+                <span class="text-[10px] font-mono font-bold text-eggShell bg-eggPale px-2 py-0.5 rounded">加工 01</span>
+                <h4 class="font-bold text-xs sm:text-sm text-printInk mt-1 font-serif">加工原有雞舍：改裝雙格隱蔽產蛋箱</h4>
+                <p class="text-[11px] text-printInk/75 mt-0.5 leading-relaxed font-serif">訂購原裝規格雞舍後，由木工老師指導孩子加工改造：三格改雙格寬敞設計，加厚粗糠與木屑，降低母雞生蛋緊迫與破損。</p>
+              </div>
+
+              <!-- 溫濕度計拍立得 -->
+              <div class="polaroid-card rotate-[1deg]">
+                <div class="tape-strip -top-3.5 right-6 rotate-2"></div>
+                <img src="web_assets/images/specs/spec_0810_temp_meter.jpg" alt="溫濕度計" class="w-full h-44 sm:h-48 object-cover rounded mb-1.5">
+                <span class="text-[10px] font-mono font-bold text-eggShell bg-eggPale px-2 py-0.5 rounded">加工 02</span>
+                <h4 class="font-bold text-xs sm:text-sm text-printInk mt-1 font-serif">雞舍環境溫濕度即時監控計</h4>
+                <p class="text-[11px] text-printInk/75 mt-0.5 leading-relaxed font-serif">全天候雙重感測溫濕度變化，作為值日生啟動遮蔭與通風科學依據。</p>
+              </div>
+
+              <!-- Antigravity App 2 拍立得 -->
+              <div class="polaroid-card rotate-[0.8deg]">
+                <div class="tape-strip -top-3.5 left-6 rotate-1"></div>
+                <img src="web_assets/images/data/0805_app_2.jpg" alt="Antigravity 系統" class="w-full h-44 sm:h-48 object-cover rounded mb-1.5">
+                <span class="text-[10px] font-mono font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded">數位系統 01</span>
+                <h4 class="font-bold text-xs sm:text-sm text-printInk mt-1 font-serif">Google Antigravity 數位記錄系統框架</h4>
+                <p class="text-[11px] text-printInk/75 mt-0.5 leading-relaxed font-serif">高中生主導設計氣象 API 與即時值日生記錄表單架構。</p>
+              </div>
+
+              <!-- Antigravity App 3 拍立得 -->
+              <div class="polaroid-card rotate-[-1.2deg]">
+                <div class="tape-strip -top-3.5 right-6 -rotate-2"></div>
+                <img src="web_assets/images/data/0805_app_3.jpg" alt="UI/UX 優化" class="w-full h-44 sm:h-48 object-cover rounded mb-1.5">
+                <span class="text-[10px] font-mono font-bold text-blue-800 bg-blue-50 px-2 py-0.5 rounded">數位系統 02</span>
+                <h4 class="font-bold text-xs sm:text-sm text-printInk mt-1 font-serif">數位系統 UI/UX 人因操作介面修正</h4>
+                <p class="text-[11px] text-printInk/75 mt-0.5 leading-relaxed font-serif">持續修正手機輸入流程與數據圖表，打造直覺防呆的值日體驗。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- BLOCK 05: 世代共好 ✕ 田野相簿                           -->
+    <!-- 整合章節：09 兒少成發心智圖 + 10 12張精選現場照片牆        -->
+    <!-- ======================================================== -->
+    <section id="block-5" class="snap-section min-h-[90dvh] sm:min-h-screen flex flex-col justify-center py-6 sm:py-10">
+      <div class="bg-white/90 rounded-3xl p-5 sm:p-10 border border-printInk/15 shadow-md relative">
+        
+        <!-- 區塊頂部固定列：標題 + 回蛋盒快速錨點 -->
+        <div class="flex items-center justify-between border-b-2 border-printInk/10 pb-3 mb-6">
+          <h2 class="text-lg sm:text-2xl font-black font-serif text-printInk">世代共好 ✕ 田野相簿</h2>
+          <a href="#cover" class="text-xs font-mono font-bold text-pencilGray hover:text-roselleRed transition flex items-center gap-1 shrink-0">
+            <i class="fa-solid fa-arrow-up text-[10px]"></i><span>回蛋盒</span>
+          </a>
+        </div>
+
+        <!-- 區塊內容自然向下展開 -->
+        <div class="space-y-8">
+
+          <!-- 09 兒少心聲：成發心智圖手繪真跡（支援 GLightbox 點擊放大） -->
+          <section id="mindmap-wall" class="relative">
+            <div class="text-center mb-8">
+              <span class="text-xs font-bold text-roselleRed tracking-widest font-mono">CHILDREN'S REFLECTIONS</span>
+              <h2 class="text-2xl sm:text-3xl font-black font-serif text-printInk mt-1">成發心智圖手繪真跡</h2>
+              <p class="text-xs text-pencilGray font-serif mt-1">從「好怕被啄」到「最好的雞老師」・點擊圖片可放大檢視手繪筆跡</p>
+            </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        <!-- 李浩仁 -->
+        <div class="polaroid-card rotate-[-1deg]">
+          <div class="tape-strip -top-3 left-6 -rotate-3"></div>
+          <a href="web_assets/images/mindmap/mindmap_haoren.jpg" class="glightbox block" data-gallery="mindmaps" data-title="手繪心智圖：守護孤雞（李浩仁）" data-description="『一開始很怕雞，怕牠會啄我，後來就不怕牠了，我喜歡跟雞講話，雞很可愛！』">
+            <img src="web_assets/images/mindmap/mindmap_haoren.jpg" alt="李浩仁心智圖" class="w-full h-56 object-cover rounded">
+          </a>
+          <div class="flex items-center justify-between mt-3 mb-1">
+            <h4 class="font-bold text-xs text-printInk font-serif">李浩仁・守護孤雞</h4>
+            <span class="text-[10px] text-amber-800 bg-amber-50 px-1.5 py-0.5 rounded">陪伴心聲</span>
+          </div>
+          <p class="text-[11px] text-pencilGray font-serif">「我喜歡跟雞講話，因為雞很可愛！」</p>
+        </div>
+
+        <!-- 吳昕柔 -->
+        <div class="polaroid-card rotate-[1.5deg]">
+          <div class="tape-strip -top-3 right-6 rotate-2"></div>
+          <a href="web_assets/images/mindmap/mindmap_xinrou.jpg" class="glightbox block" data-gallery="mindmaps" data-title="手繪心智圖：守護星星（吳昕柔）" data-description="『一開始雞很怕環境，後面待久了就不怕了！不能大聲叫、追牠，要輕輕摸！』">
+            <img src="web_assets/images/mindmap/mindmap_xinrou.jpg" alt="吳昕柔心智圖" class="w-full h-56 object-cover rounded">
+          </a>
+          <div class="flex items-center justify-between mt-3 mb-1">
+            <h4 class="font-bold text-xs text-printInk font-serif">吳昕柔・守護星星</h4>
+            <span class="text-[10px] text-blue-800 bg-blue-50 px-1.5 py-0.5 rounded">巡檢心聲</span>
+          </div>
+          <p class="text-[11px] text-pencilGray font-serif">「不能大聲追牠，待久了彼此就不怕了！」</p>
+        </div>
+
+        <!-- 許芷菱 -->
+        <div class="polaroid-card rotate-[-1.5deg]">
+          <div class="tape-strip -top-3 left-6 -rotate-2"></div>
+          <a href="web_assets/images/mindmap/mindmap_zhiling.jpg" class="glightbox block" data-gallery="mindmaps" data-title="手繪心智圖：守護夏天（許芷菱）" data-description="『進去前要洗手，那是雞老師的家！養雞我覺得雞會一直啄人，結果傷害到人是因為動作太粗魯，要溫柔！』">
+            <img src="web_assets/images/mindmap/mindmap_zhiling.jpg" alt="許芷菱心智圖" class="w-full h-56 object-cover rounded">
+          </a>
+          <div class="flex items-center justify-between mt-3 mb-1">
+            <h4 class="font-bold text-xs text-printInk font-serif">許芷菱・守護夏天</h4>
+            <span class="text-[10px] text-emerald-800 bg-emerald-50 px-1.5 py-0.5 rounded">品管心聲</span>
+          </div>
+          <p class="text-[11px] text-pencilGray font-serif">「進去前要洗手，那是雞老師的家！」</p>
+        </div>
+      </div>
+
+      <!-- 張恒宇便條紙特寫 -->
+      <div class="sticky-note bg-[#FFF3C4] p-6 sm:p-8 max-w-xl mx-auto rotate-1 border border-amber-300">
+        <div class="tape-strip -top-3.5 left-1/2 -translate-x-1/2 rotate-1"></div>
+        <div class="flex items-center gap-2 mb-2 text-roselleRed font-bold text-xs">
+          <i class="fa-solid fa-thumbtack"></i>
+          <span>值日生真實告白便條</span>
+        </div>
+        <h4 class="font-black text-base text-printInk font-serif mb-2">張恒宇的直白心得：</h4>
+        <p class="text-sm text-printInk leading-relaxed font-serif">
+          問：下雨天你怎麼照顧雞的？<br>
+          答：<strong>「下雨天把雞趕進去——是用抱的抱進去！」</strong>
+        </p>
+        <p class="text-xs text-emerald-900 font-bold mt-3 font-serif">
+          「來五味屋的時候可以做照顧雞的工作，想跟大家一起做！」
+        </p>
+      </div>
+    </section>
+
+    <!-- 10 影像紀實：精選現場照片拍立得剪貼相簿牆（完整 12 張 GLightbox 大圖燈箱） -->
+    <section id="gallery" class="bg-white/85 rounded-3xl p-8 sm:p-12 border border-printInk/15 shadow-md relative">
+      <div class="border-b-2 border-printInk/10 pb-4 mb-8">
+        <span class="text-xs font-mono font-bold text-roselleRed uppercase">PHOTO GALLERY</span>
+        <h2 class="text-2xl sm:text-3xl font-black font-serif text-printInk mt-1">精選現場照片牆</h2>
+        <p class="text-xs text-pencilGray font-serif mt-1">
+          完整收錄見習、自造、招商與成發動人瞬間。點擊任意圖片即可開啟高解析全螢幕檢視與放大。
+        </p>
+      </div>
+
+      <!-- 12 張拍立得相簿網格 -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+        <!-- 01 -->
+        <div class="polaroid-card rotate-[-1deg]">
+          <a href="web_assets/images/gallery/0530_01_visit_farm.jpg" class="glightbox block" data-gallery="showcase" data-title="五味屋兒少參訪黎明方舟牧場，實地觀摩友善畜牧環境。" data-description="五味屋兒少赴壽豐黎明方舟牧場實地見習，初次接觸符合動物福利標準的非籠飼飼養環境與母雞生活作息。">
+            <img src="web_assets/images/gallery/0530_01_visit_farm.jpg" alt="參訪牧場" class="w-full h-36 sm:h-44 object-cover rounded">
+          </a>
+          <p class="text-[10px] text-printInk/80 mt-2 font-serif line-clamp-2">05/30 兒少參訪黎明方舟牧場實地觀摩</p>
+        </div>
+
+        <!-- 02 -->
+        <div class="polaroid-card rotate-[1.5deg]">
+          <a href="web_assets/images/gallery/0530_02_isa_brown_hen.jpg" class="glightbox block" data-gallery="showcase" data-title="孩子們親手割牧草餵食，近距離觀察伊莎蛋雞的健康體態。" data-description="孩子們在專業人員引導下親自割草餵食，仔細觀察伊莎蛋雞進食與羽色光澤，建立對動物健康的敏銳度。">
+            <img src="web_assets/images/gallery/0530_02_isa_brown_hen.jpg" alt="割草餵食" class="w-full h-36 sm:h-44 object-cover rounded">
+          </a>
+          <p class="text-[10px] text-printInk/80 mt-2 font-serif line-clamp-2">05/30 親手割牧草餵食，觀察伊莎蛋雞</p>
+        </div>
+
+        <!-- 03 -->
+        <div class="polaroid-card rotate-[-1.5deg]">
+          <a href="web_assets/images/gallery/0530_03_life_experience.jpg" class="glightbox block" data-gallery="showcase" data-title="跨出教室走入農牧現場，孩子們親自體驗檢查與處理雞蛋的過程。" data-description="告別抽象教科書，五味屋兒少在牧場親自拿取雞蛋，仔細檢視蛋殼光潔度與重量，展開生命教育的真實探索。">
+            <img src="web_assets/images/gallery/0530_03_life_experience.jpg" alt="檢查雞蛋" class="w-full h-36 sm:h-44 object-cover rounded">
+          </a>
+          <p class="text-[10px] text-printInk/80 mt-2 font-serif line-clamp-2">05/30 親身體驗檢查與處理雞蛋</p>
+        </div>
+
+        <!-- 04 -->
+        <div class="polaroid-card rotate-[1deg]">
+          <a href="web_assets/images/gallery/0530_04_group_photo.jpg" class="glightbox block" data-gallery="showcase" data-title="圓滿結束黎明方舟牧場見習，全體夥伴在農場合影留念。" data-description="在豐富充實的實地觀摩後，五味屋兒少與青年志工在方舟牧場前開心合照，為啟動友善養雞計畫凝聚共識。">
+            <img src="web_assets/images/gallery/0530_04_group_photo.jpg" alt="見習合影" class="w-full h-36 sm:h-44 object-cover rounded">
+          </a>
+          <p class="text-[10px] text-printInk/80 mt-2 font-serif line-clamp-2">05/30 方舟牧場見習合影留念</p>
+        </div>
+
+        <!-- 05 -->
+        <div class="polaroid-card rotate-[2deg]">
+          <a href="web_assets/images/gallery/0606_05_timber_assembly.jpg" class="glightbox block" data-gallery="showcase" data-title="大專青年、兒少與五味屋同仁齊心協力，合力組裝雞舍木構主體。" data-description="不假他人之手，青年志工、兒少與五味屋夥伴在農學願基地合力搬運並固定實木結構，親手建起動物福利的家。">
+            <img src="web_assets/images/gallery/0606_05_timber_assembly.jpg" alt="木構組裝" class="w-full h-36 sm:h-44 object-cover rounded">
+          </a>
+          <p class="text-[10px] text-printInk/80 mt-2 font-serif line-clamp-2">06/06 青年兒少協力組裝木構主體</p>
+        </div>
+
+        <!-- 06 -->
+        <div class="polaroid-card rotate-[-2deg]">
+          <a href="web_assets/images/gallery/0606_06_verify_parts.jpg" class="glightbox block" data-gallery="showcase" data-title="組裝前仔細核對說明書部件與結構排列，確保施工步驟正確無誤。" data-description="面對細節複雜的說明書，孩子與青年志工在施工前逐一清點排列所有木材與五金配件，以嚴謹態度確保組裝品質。">
+            <img src="web_assets/images/gallery/0606_06_verify_parts.jpg" alt="清點零件" class="w-full h-36 sm:h-44 object-cover rounded">
+          </a>
+          <p class="text-[10px] text-printInk/80 mt-2 font-serif line-clamp-2">06/06 仔細核對說明書部件與結構</p>
+        </div>
+
+        <!-- 07 -->
+        <div class="polaroid-card rotate-[0.8deg]">
+          <a href="web_assets/images/gallery/0606_07_instruction_reading.jpg" class="glightbox block" data-gallery="showcase" data-title="五味屋同仁帶領兒少對照說明書識別各項部件，共同討論並構思組裝方式。" data-description="五味屋工作同仁耐心地帶著孩子們研讀圖面，引導兒少主動提出施工構想，在動手實作中培養解決問題的自信心。">
+            <img src="web_assets/images/gallery/0606_07_instruction_reading.jpg" alt="研讀說明書" class="w-full h-36 sm:h-44 object-cover rounded">
+          </a>
+          <p class="text-[10px] text-printInk/80 mt-2 font-serif line-clamp-2">06/06 同仁帶領孩子討論組裝工法</p>
+        </div>
+
+        <!-- 08 -->
+        <div class="polaroid-card rotate-[-1deg]">
+          <a href="web_assets/images/gallery/0606_08_assembly_complete.jpg" class="glightbox block" data-gallery="showcase" data-title="雞舍木構主體順利組裝完畢，全體兒少與志工在基地前合影留念。" data-description="經過一整天的揮汗勞動，堅固通風的雞舍主體架構順利落成，大家在即將迎接母雞入住的新家前留下珍貴紀念。">
+            <img src="web_assets/images/gallery/0606_08_assembly_complete.jpg" alt="組裝落成" class="w-full h-36 sm:h-44 object-cover rounded">
+          </a>
+          <p class="text-[10px] text-printInk/80 mt-2 font-serif line-clamp-2">06/06 雞舍木構主體順利落成合影</p>
+        </div>
+
+        <!-- 09 -->
+        <div class="polaroid-card rotate-[1.5deg]">
+          <a href="web_assets/images/gallery/0725_09_recruitment_pledge.jpg" class="glightbox block" data-gallery="showcase" data-title="夥伴們齊聚招商大會簽署生命誓約，依各自專長分派守護崗位。" data-description="五味屋孩子們慎重簽署《生命守護誓約書》，宣誓每日依 SOP 悉心照顧母雞與清潔雞蛋，建立責任感。">
+            <img src="web_assets/images/gallery/0725_09_recruitment_pledge.jpg" alt="招商大會" class="w-full h-36 sm:h-44 object-cover rounded">
+          </a>
+          <p class="text-[10px] text-printInk/80 mt-2 font-serif line-clamp-2">07/25 招商大會簽署生命守護誓約</p>
+        </div>
+
+        <!-- 10 -->
+        <div class="polaroid-card rotate-[-1.8deg]">
+          <a href="web_assets/images/gallery/0803_10_expert_guidance.jpg" class="glightbox block" data-gallery="showcase" data-title="李宏韡獸醫師親臨雞舍基地指導，帶領青年與兒少檢視飼養環境與通風設計。" data-description="東華專業顧問李宏韡獸醫師檢驗棲架高度、通風排氣與安全網，給予兒少寶貴的畜牧醫學指引。">
+            <img src="web_assets/images/gallery/0803_10_expert_guidance.jpg" alt="專家檢驗" class="w-full h-36 sm:h-44 object-cover rounded">
+          </a>
+          <p class="text-[10px] text-printInk/80 mt-2 font-serif line-clamp-2">08/03 李宏韡獸醫師實地合規檢核</p>
+        </div>
+
+        <!-- 11 -->
+        <div class="polaroid-card rotate-[1.2deg]">
+          <a href="web_assets/images/gallery/0816_11_hand_feeding.jpg" class="glightbox block" data-gallery="showcase" data-title="孩子們在草地上輕攤掌心親手餵食，建立人雞互信並觀察母雞健康體態。" data-description="兒少蹲下身軀輕攤手掌餵食，母雞溫馴啄食，在無聲互動中體察生命的信任與溫暖。">
+            <img src="web_assets/images/gallery/0816_11_hand_feeding.jpg" alt="掌心餵食" class="w-full h-36 sm:h-44 object-cover rounded">
+          </a>
+          <p class="text-[10px] text-printInk/80 mt-2 font-serif line-clamp-2">08/16 掌心餵食建立人雞互信</p>
+        </div>
+
+        <!-- 12 -->
+        <div class="polaroid-card rotate-[-1deg]">
+          <a href="web_assets/images/gallery/0825_12_presentation_prep.jpg" class="glightbox block" data-gallery="showcase" data-title="兒少負責人帶領同儕回顧活動歷程，自主籌備與構思成果發表的內容與簡報。" data-description="孩子們圍坐討論，整理這幾個月以來的收穫與成長，自信梳理屬於自己的成發故事。">
+            <img src="web_assets/images/gallery/0825_12_presentation_prep.jpg" alt="籌備成發" class="w-full h-36 sm:h-44 object-cover rounded">
+          </a>
+          <p class="text-[10px] text-printInk/80 mt-2 font-serif line-clamp-2">08/25 兒少自主籌備成果發表</p>
+        </div>
+      </div>
+    </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- BLOCK 06: 田野留言 ✕ 現場換禮                           -->
+    <!-- 整合章節：11 溫暖打氣與Padlet互動 + 現場限定好禮相贈       -->
+    <!-- ======================================================== -->
+    <section id="block-6" class="snap-section min-h-[90dvh] sm:min-h-screen flex flex-col justify-center py-6 sm:py-10">
+      <div class="bg-white/90 rounded-3xl p-5 sm:p-10 border border-printInk/15 shadow-md relative">
+        
+        <!-- 區塊頂部固定列：標題 + 回蛋盒快速錨點 -->
+        <div class="flex items-center justify-between border-b-2 border-printInk/10 pb-3 mb-6">
+          <h2 class="text-lg sm:text-2xl font-black font-serif text-printInk">田野留言 ✕ 現場換禮</h2>
+          <a href="#cover" class="text-xs font-mono font-bold text-pencilGray hover:text-roselleRed transition flex items-center gap-1 shrink-0">
+            <i class="fa-solid fa-arrow-up text-[10px]"></i><span>回蛋盒</span>
+          </a>
+        </div>
+
+        <!-- 區塊內容自然向下展開 -->
+        <div class="space-y-8">
+
+          <!-- 11 溫暖打氣：田野手帳剪貼留言板 ＋ 現場好禮 ＋ 復古祝福籤 -->
+          <section id="padlet-wall" class="relative">
+
+            <!-- 標題區：無任何 emoji，純淨手帳章節排版 -->
+            <div class="border-b-2 border-printInk/10 pb-4 mb-8">
+              <span class="text-xs font-mono font-bold text-roselleRed uppercase tracking-widest block">LOT 11・COMMUNITY NOTES</span>
+              <h2 class="text-2xl sm:text-3xl font-black font-serif text-printInk mt-1">溫暖打氣：寫下給五味屋孩子們的鼓勵</h2>
+              <p class="text-xs text-pencilGray font-serif mt-1">
+                一枚雞蛋牽起大學生、在地長輩與孩子的生命實踐。誠摯邀請關心鄉村教育與動物福利的您留下祝福筆記。
+              </p>
+            </div>
+
+      <!-- 手帳風牛皮撕邊便箋：現場限定・好禮相贈 -->
+      <div class="mb-10 p-5 sm:p-6 rounded-2xl bg-[#FAF4E8] border border-amber-300/80 max-w-4xl mx-auto relative shadow-sm rotate-[-0.5deg]">
+        <!-- 撕邊和紙膠帶 -->
+        <div class="tape-strip -top-3 left-8 -rotate-3 opacity-85"></div>
+
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5">
+          <div class="flex items-start gap-4">
+            <!-- 復古雙環印章 -->
+            <div class="rubber-stamp w-16 h-16 text-[8px] rotate-[-5deg] shrink-0 mt-0.5">
+              <span>現場限定</span>
+              <span class="font-bold my-0.5 text-[9px]">好禮相贈</span>
+              <span>五味屋</span>
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-mono font-bold text-amber-900 bg-amber-100/70 px-2 py-0.5 rounded">FIELD EVENT</span>
+                <h3 class="text-base font-black text-printInk font-serif">現場限定互動有禮・記錄美好</h3>
+              </div>
+              <p class="text-xs text-printInk/80 mt-1.5 font-serif leading-relaxed">
+                追蹤五味屋官方 Facebook 專頁並截圖附於日誌留言中，即可於成果展現場向團隊夥伴領取「友善動福手作紀念小禮」<span class="text-roselleRed font-bold">（數量有限，送完為止）</span>！
+              </p>
+            </div>
+          </div>
+
+          <a href="https://www.facebook.com/fivewayhouse/" target="_blank" rel="noopener noreferrer"
+             class="w-full sm:w-auto inline-flex items-center justify-center px-4 py-2.5 rounded-xl font-bold text-white bg-[#1877F2] hover:bg-[#166fe5] shadow-xs hover:shadow transition text-xs shrink-0 font-serif">
+            <i class="fa-brands fa-facebook mr-2 text-sm"></i>
+            <span>前往追蹤五味屋 FB</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 三步驟排版風格切換列（提供版本 A 與版本 B 即時對照） -->
+      <!-- ── 牛皮手撕流程橫條（三步驟・帶手繪箭頭） ── -->
+      <div class="mb-10 max-w-4xl mx-auto">
+        <div class="p-6 sm:p-7 rounded-2xl bg-[#FAF4E8] border border-amber-300/80 relative shadow-sm rotate-[-0.5deg]">
+          <div class="tape-strip -top-3 left-1/2 -translate-x-1/2 -rotate-1 opacity-80" style="width: 120px; height: 22px;"></div>
+          
+          <div class="flex items-center justify-between mb-5 border-b border-printInk/10 pb-2">
+            <div class="flex items-center gap-2">
+              <span class="text-xs font-mono font-bold text-roselleRed">COMMUNITY ACTION FLOWSHEET</span>
+              <span class="text-[11px] font-mono text-pencilGray">田野手冊活動流程圖・參與鼓勵三步驟</span>
+            </div>
+            <span class="text-[10px] font-mono text-amber-900 bg-amber-100/80 px-2 py-0.5 rounded font-bold">現場動線</span>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative">
+            <!-- 節點 1 -->
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-full bg-amber-200 text-amber-900 font-mono font-black text-xs flex items-center justify-center shrink-0 border border-amber-300 shadow-2xs">
+                01
+              </div>
+              <div>
+                <span class="text-[10px] font-mono font-bold text-amber-800 block">STEP 01</span>
+                <h5 class="font-bold text-sm font-serif text-printInk mt-0.5">追蹤粉專截圖</h5>
+                <p class="text-xs text-printInk/75 font-serif mt-1 leading-relaxed">前往五味屋官方 FB 專頁追蹤，並留存畫面截圖。</p>
+              </div>
+            </div>
+
+            <!-- 節點 2 -->
+            <div class="flex items-start gap-3 relative md:before:absolute md:before:-left-3 md:before:top-3 md:before:content-['➔'] md:before:text-pencilGray/40 md:before:text-sm">
+              <div class="w-8 h-8 rounded-full bg-emerald-200 text-emerald-900 font-mono font-black text-xs flex items-center justify-center shrink-0 border border-emerald-300 shadow-2xs">
+                02
+              </div>
+              <div>
+                <span class="text-[10px] font-mono font-bold text-emerald-800 block">STEP 02</span>
+                <h5 class="font-bold text-sm font-serif text-printInk mt-0.5">Padlet 留言附圖</h5>
+                <p class="text-xs text-printInk/75 font-serif mt-1 leading-relaxed">於下方留言板點擊「＋」，上傳截圖並寫下暖心鼓勵。</p>
+              </div>
+            </div>
+
+            <!-- 節點 3 -->
+            <div class="flex items-start gap-3 relative md:before:absolute md:before:-left-3 md:before:top-3 md:before:content-['➔'] md:before:text-pencilGray/40 md:before:text-sm">
+              <div class="w-8 h-8 rounded-full bg-blue-200 text-blue-900 font-mono font-black text-xs flex items-center justify-center shrink-0 border border-blue-300 shadow-2xs">
+                03
+              </div>
+              <div>
+                <span class="text-[10px] font-mono font-bold text-blue-800 block">STEP 03</span>
+                <h5 class="font-bold text-sm font-serif text-printInk mt-0.5">現場出示換小禮</h5>
+                <p class="text-xs text-printInk/75 font-serif mt-1 leading-relaxed">於成果展現場出示已發布卡片，兌換動福手作小禮<span class="text-roselleRed font-bold">（數量有限，先到先得）</span>！</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 軟木布告欄 × 手帳剪貼簿 Padlet 容器（四角和紙膠帶斜角固定） -->
+      <div class="max-w-4xl mx-auto relative">
+        <div class="p-3 sm:p-5 bg-[#D8CDB8] rounded-3xl border-2 border-pulpDeeper shadow-lg relative">
+          <!-- 頂部兩側和紙膠帶固定 -->
+          <div class="absolute -top-3 -left-3 w-16 h-7 bg-kraft/80 border-dashed border-kraftDark/50 border -rotate-45 z-20 shadow-xs pointer-events-none"></div>
+          <div class="absolute -top-3 -right-3 w-16 h-7 bg-kraft/80 border-dashed border-kraftDark/50 border rotate-45 z-20 shadow-xs pointer-events-none"></div>
+
+          <div class="rounded-2xl overflow-hidden bg-white shadow-inner">
+            <iframe 
+              id="padlet-iframe"
+              src="https://padlet.com/embed/s02402v58cypnpuqfi8p" 
+              frameborder="0" 
+              allow="camera;microphone;geolocation;display-capture;clipboard-write" 
+              class="padlet-responsive-frame"
+              title="給五味屋孩子們的加油祝福牆"
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-3 mt-6 px-2 text-xs relative z-10">
+          <span class="text-pencilGray font-serif">💡 點擊留言板右下角圓形「＋」號即可發布；若瀏覽器限制顯示，可點右側獨立開啟：</span>
+          <a href="https://padlet.com/embed/s02402v58cypnpuqfi8p" target="_blank" rel="noopener noreferrer"
+             class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-printInk text-white font-bold hover:bg-roselleRed transition text-xs shrink-0 font-serif">
+            <span>開啟 Padlet 獨立分頁</span>
+            <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 頁尾：紙漿蛋盒與手帳封底 -->
+  <footer class="border-t border-printInk/15 py-12 px-4 sm:px-8 bg-pulpDark text-center text-xs text-printInk/75 space-y-3 mt-16">
+    <img src="web_assets/images/logo.png" alt="五味屋〔囝仔人ㄟ店〕" class="h-10 sm:h-12 mx-auto object-contain mb-3 opacity-90 hover:opacity-100 transition">
+    <div class="font-mono text-sm font-black text-printInk">
+      [ LOT #2026-HUALIEN-5WAY-COOP・FULL EDITION ]
+    </div>
+    <p class="font-serif font-medium">豐田五味屋（花蓮縣鄉村社區大學發展協會）✕ 國立東華大學「聞雞起舞」青年團隊</p>
+    <p class="font-mono text-[11px] text-pencilGray">2026 花蓮青年夢想家獲獎專案・兒少農牧與動物福利教育實踐成果展</p>
+  </footer>
+
+  <!-- 手機與桌面浮動「回蛋盒」小膠囊 -->
+  <a href="#cover" id="floating-back-egg"
+     class="fixed bottom-5 right-5 z-40 bg-printInk/90 text-white backdrop-blur-md px-3.5 py-2 rounded-full shadow-2xl border border-white/20 text-xs font-serif flex items-center gap-1.5 hover:bg-roselleRed transition-all active:scale-95 opacity-90 hover:opacity-100">
+    <i class="fa-solid fa-egg text-amber-300 text-xs"></i>
+    <span class="font-bold">回蛋盒</span>
+    <i class="fa-solid fa-arrow-up text-[10px]"></i>
+  </a>
+
+  <!-- GLightbox JS -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+  <script>
+    // 初始化 GLightbox 燈箱
+    const lightbox = GLightbox({
+      selector: '.glightbox',
+      touchNavigation: true,
+      loop: true
+    });
+
+    // 動態繪製 182 顆蛋形點陣圖（生動 3D 蛋體光澤）
+    (function renderEggMatrix() {
+      const container = document.getElementById('egg-matrix-container');
+      if (!container) return;
+      const totalEggs = 182;
+      const brokenCount = 10; // 5.5%
+      let html = '';
+      for (let i = 1; i <= totalEggs; i++) {
+        const isBroken = i > (totalEggs - brokenCount);
+        if (isBroken) {
+          // 破損蛋
+          html += `
+            <div title="第 ${i} 顆（微裂破損）" class="w-4 h-5 rounded-full bg-roselleRed flex items-center justify-center shadow-xs cursor-pointer hover:scale-125 transition" style="border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;">
+              <span class="text-[8px] text-white font-bold">✕</span>
+            </div>
+          `;
+        } else {
+          // 完整蛋 (vivid 3D egg)
+          html += `
+            <div title="第 ${i} 顆好蛋" class="w-4 h-5 rounded-full shadow-2xs cursor-pointer hover:scale-125 transition" style="border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; background: radial-gradient(circle at 35% 30%, #FEE8D6 0%, #F49B55 60%, #B84A12 100%);"></div>
+          `;
+        }
+      }
+      container.innerHTML = html;
+    })();
+
+    // 智慧雙階磁吸滾動控制器（長區塊先吸附底部、再滑吸附下一區塊頂部）
+    (function initSmartBoundarySnap() {
+      const blockIds = ['cover', 'block-1', 'block-2', 'block-3', 'block-4', 'block-5', 'block-6'];
+      const blocks = blockIds.map(id => document.getElementById(id)).filter(Boolean);
+      if (blocks.length === 0) return;
+
+      let isSnapping = false;
+      let snapTimeout = null;
+
+      function getNavHeight() {
+        const nav = document.querySelector('nav');
+        return nav ? nav.offsetHeight : 56;
+      }
+
+      // 取得當前視窗焦點所在的區塊索引
+      function getCurrentBlockIndex() {
+        const navH = getNavHeight();
+        const focusY = navH + 30;
+        for (let i = 0; i < blocks.length; i++) {
+          const rect = blocks[i].getBoundingClientRect();
+          if (rect.top <= focusY && rect.bottom > focusY) {
+            return i;
+          }
+        }
+        let closestIdx = 0;
+        let minDiff = Infinity;
+        blocks.forEach((b, idx) => {
+          const diff = Math.abs(b.getBoundingClientRect().top - navH);
+          if (diff < minDiff) {
+            minDiff = diff;
+            closestIdx = idx;
+          }
+        });
+        return closestIdx;
+      }
+
+      function performSnap(targetY) {
+        if (isSnapping) return;
+        isSnapping = true;
+        
+        const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+        const clampedY = Math.max(0, Math.min(targetY, maxScroll));
+
+        window.scrollTo({
+          top: clampedY,
+          behavior: 'smooth'
+        });
+
+        clearTimeout(snapTimeout);
+        snapTimeout = setTimeout(() => {
+          isSnapping = false;
+        }, 750);
+      }
+
+      // 將指定區塊的「頂部」吸附到導覽列正下方
+      function snapToBlockTop(block) {
+        if (!block) return;
+        const navH = getNavHeight();
+        const targetY = block.getBoundingClientRect().top + window.pageYOffset - navH;
+        performSnap(targetY);
+      }
+
+      // 將指定區塊的「底部」吸附到螢幕底端
+      function snapToBlockBottom(block) {
+        if (!block) return;
+        const targetY = block.getBoundingClientRect().top + window.pageYOffset + block.offsetHeight - window.innerHeight;
+        performSnap(targetY);
+      }
+
+      // 判斷往下滾動時的動作（回傳是否有執行吸附）
+      function handleScrollDown(currentIdx) {
+        const currentBlock = blocks[currentIdx];
+        if (!currentBlock) return false;
+
+        const rect = currentBlock.getBoundingClientRect();
+        const navH = getNavHeight();
+        const winH = window.innerHeight;
+        const availH = winH - navH;
+        const blockH = currentBlock.offsetHeight;
+
+        // 封面蛋盒 (Index 0)：下滑直接前進至 Block 1 頂部，不卡在封面底部（消除黏底）
+        if (currentIdx === 0) {
+          snapToBlockTop(blocks[1]);
+          return true;
+        }
+
+        // 若區塊完全能在一屏內呈現 (短區塊)
+        if (blockH <= availH + 25) {
+          if (currentIdx < blocks.length - 1) {
+            snapToBlockTop(blocks[currentIdx + 1]);
+            return true;
+          }
+          return false;
+        }
+
+        // 區塊長度超過一屏：判斷當前是否已吸附在螢幕底端
+        const isAtBottom = (rect.bottom <= winH + 25);
+
+        if (!isAtBottom) {
+          // 尚未吸附底部：中度長度區塊（如 Block 1）直接吸附底部；超長區塊（如 Block 2）若接近底部則吸附底部
+          const isModerate = blockH <= availH * 1.6;
+          if (isModerate || rect.bottom <= winH + 180) {
+            snapToBlockBottom(currentBlock);
+            return true;
+          }
+          // 超長區塊中間維持原生滾動
+          return false;
+        } else {
+          // 底部已經吸附在螢幕底端：再次下滑時，吸附至下一區塊頂部對齊導覽列
+          if (currentIdx < blocks.length - 1) {
+            snapToBlockTop(blocks[currentIdx + 1]);
+            return true;
+          }
+          return false;
+        }
+      }
+
+      // 判斷往上滾動時的動作（回傳是否有執行吸附）
+      function handleScrollUp(currentIdx) {
+        const currentBlock = blocks[currentIdx];
+        if (!currentBlock) return false;
+
+        const rect = currentBlock.getBoundingClientRect();
+        const navH = getNavHeight();
+        const winH = window.innerHeight;
+        const availH = winH - navH;
+        const blockH = currentBlock.offsetHeight;
+
+        const isShort = blockH <= availH + 25;
+        const isAtTop = (rect.top >= navH - 25);
+        const isAtBottom = (rect.bottom <= winH + 25);
+
+        // 若在 Block 1 頂部往上滾動，直接回封面頂部
+        if (currentIdx === 1 && isAtTop) {
+          snapToBlockTop(blocks[0]);
+          return true;
+        }
+
+        if (isShort) {
+          if (currentIdx > 0) {
+            const prevBlock = blocks[currentIdx - 1];
+            if (prevBlock.offsetHeight <= availH + 25) {
+              snapToBlockTop(prevBlock);
+            } else {
+              snapToBlockBottom(prevBlock);
+            }
+            return true;
+          }
+          return false;
+        } else {
+          // 長區塊
+          if (isAtBottom && blockH <= availH * 1.6) {
+            // 中等長度區塊在底部上滑，先回到頂部
+            snapToBlockTop(currentBlock);
+            return true;
+          } else if (isAtTop) {
+            // 已經在頂部，再上滑則吸附至上一區塊底部
+            if (currentIdx > 0) {
+              const prevBlock = blocks[currentIdx - 1];
+              if (prevBlock.offsetHeight <= availH + 25) {
+                snapToBlockTop(prevBlock);
+              } else {
+                snapToBlockBottom(prevBlock);
+              }
+              return true;
+            }
+            return false;
+          }
+          return false;
+        }
+      }
+
+      // ── 桌面滑鼠 / 觸控板滾輪事件 (Wheel) ──
+      let wheelAccumulator = 0;
+      let wheelResetTimer = null;
+
+      window.addEventListener('wheel', (e) => {
+        if (isSnapping) {
+          e.preventDefault();
+          return;
+        }
+
+        const currentIdx = getCurrentBlockIndex();
+        wheelAccumulator += e.deltaY;
+        clearTimeout(wheelResetTimer);
+        wheelResetTimer = setTimeout(() => { wheelAccumulator = 0; }, 150);
+
+        if (e.deltaY > 0 && Math.abs(wheelAccumulator) > 20) {
+          const didSnap = handleScrollDown(currentIdx);
+          if (didSnap) {
+            e.preventDefault();
+            wheelAccumulator = 0;
+          }
+        } else if (e.deltaY < 0 && Math.abs(wheelAccumulator) > 20) {
+          const didSnap = handleScrollUp(currentIdx);
+          if (didSnap) {
+            e.preventDefault();
+            wheelAccumulator = 0;
+          }
+        }
+      }, { passive: false });
+
+      // ── 手機觸控滑動手勢 (Touch) ──
+      let touchStartY = 0;
+      let touchStartX = 0;
+      let isTouchTracking = false;
+
+      window.addEventListener('touchstart', (e) => {
+        if (e.touches.length !== 1) return;
+        touchStartY = e.touches[0].clientY;
+        touchStartX = e.touches[0].clientX;
+        isTouchTracking = true;
+      }, { passive: true });
+
+      window.addEventListener('touchmove', (e) => {
+        if (!isTouchTracking || isSnapping) return;
+        const currentY = e.touches[0].clientY;
+        const currentX = e.touches[0].clientX;
+        const deltaY = currentY - touchStartY;
+        const deltaX = currentX - touchStartX;
+
+        // 若水平滑動大於垂直滑動，不干涉（燈箱、相簿橫滑等）
+        if (Math.abs(deltaX) > Math.abs(deltaY)) return;
+
+        const currentIdx = getCurrentBlockIndex();
+        if (deltaY < -40) {
+          // 向下滑動
+          const didSnap = handleScrollDown(currentIdx);
+          if (didSnap) {
+            isTouchTracking = false;
+          }
+        } else if (deltaY > 40) {
+          // 向上滑動
+          const didSnap = handleScrollUp(currentIdx);
+          if (didSnap) {
+            isTouchTracking = false;
+          }
+        }
+      }, { passive: true });
+
+      window.addEventListener('touchend', () => {
+        isTouchTracking = false;
+      }, { passive: true });
+
+      // ── 點擊錨點連結（如回蛋盒或蛋體點擊）時暫時解除吸附鎖，避免干擾原生跳轉 ──
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', () => {
+          isSnapping = true;
+          clearTimeout(snapTimeout);
+          snapTimeout = setTimeout(() => {
+            isSnapping = false;
+          }, 900);
+        });
+      });
+    })();
+
+    // 蛋盒蛋體與膠囊標籤雙向互動連動 (Two-way Highlight Linkage)
+    (function initCartonTwoWayInteraction() {
+      for (let i = 1; i <= 6; i++) {
+        const spot = document.getElementById(`egg-spot-${i}`);
+        const tag = document.getElementById(`egg-tag-${i}`);
+        if (!spot || !tag) continue;
+
+        // 當觸碰/懸停蛋體熱區時，下方對應膠囊標籤同步高亮
+        spot.addEventListener('mouseenter', () => tag.classList.add('is-active'));
+        spot.addEventListener('mouseleave', () => tag.classList.remove('is-active'));
+        spot.addEventListener('touchstart', () => tag.classList.add('is-active'), { passive: true });
+        spot.addEventListener('touchend', () => setTimeout(() => tag.classList.remove('is-active'), 500), { passive: true });
+
+        // 當觸碰/懸停膠囊標籤時，上方蛋體熱區同步高亮金光
+        tag.addEventListener('mouseenter', () => spot.classList.add('is-active'));
+        tag.addEventListener('mouseleave', () => spot.classList.remove('is-active'));
+        tag.addEventListener('touchstart', () => spot.classList.add('is-active'), { passive: true });
+        tag.addEventListener('touchend', () => setTimeout(() => spot.classList.remove('is-active'), 500), { passive: true });
+      }
+    })();
+  </script>
+</body>
+</html>

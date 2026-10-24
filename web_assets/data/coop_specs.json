@@ -1,0 +1,34 @@
+[
+  {
+    "id": "spec-1",
+    "tag": "產蛋箱改進",
+    "title": "雙格獨立隱蔽產蛋箱與厚鋪墊料",
+    "standard": "三格改雙格寬敞設計｜厚鋪粗糠與木屑墊料",
+    "image": "web_assets/images/specs/spec_0811_nestbox_2grid.jpg",
+    "description": "將原本三個格子改成兩個格子的蛋箱，並鋪上厚實墊料。讓母雞產蛋時擁有更充裕的轉身與隱蔽空間，有效降低生蛋緊迫感與雞蛋碰撞破損率。"
+  },
+  {
+    "id": "spec-2",
+    "tag": "環境監控",
+    "title": "雞舍溫濕度即時監控計",
+    "standard": "溫濕度雙重感測｜精準掌握舍內微氣候",
+    "image": "web_assets/images/specs/spec_0810_temp_meter.jpg",
+    "description": "掛上溫度計（包含濕度計功能），全天候監視雞舍內部環境溫度與濕度，作為值日生調整通風、遮蔭與防寒的科學決策依據。"
+  },
+  {
+    "id": "spec-3",
+    "tag": "棲架增層",
+    "title": "多層次休憩棲架空間",
+    "standard": "增加垂直活動層次｜滿足夜間登高天性",
+    "image": "web_assets/images/specs/spec_2256_perch_tier.jpg",
+    "description": "增加一層棲架，有效拓展垂直空間，讓 10 隻雞老師在舍內皆有充足且平等的抓握站立與睡眠休息空間。"
+  },
+  {
+    "id": "spec-4",
+    "tag": "結構加固",
+    "title": "L 型角鐵（L Bracket）五金結構加固",
+    "standard": "耐震抗拉五金鎖定｜提升支撐穩固與安全",
+    "image": "web_assets/images/specs/spec_2216_l_bracket.jpg",
+    "description": "使用 L Bracket（金屬角鐵）加固棲架與主結構接合處，確保結構承重堅固耐用，避免雞群跳躍抓握時晃動，落實動福安全。"
+  }
+]

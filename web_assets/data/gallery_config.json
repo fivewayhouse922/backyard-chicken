@@ -1,0 +1,89 @@
+{
+  "_comment": "【精選相簿 Gallery 區塊設定】依拍攝日期 mmdd 嚴格按時間順序排列（05/30 參訪見習 → 06/06 雞舍組裝 → 07/25 招商誓約 → 08/03 專家指導 → 08/16 掌心餵食 → 08/25 成果發表討論）。電腦版呈現 12 格（3x4 矩陣），手機版呈現 12 格（2x6 矩陣滿版）。圖說均採用完整語句，不含冒號。",
+  "photos": [
+    {
+      "id": "gallery_01",
+      "image": "web_assets/images/gallery/0530_01_visit_farm.jpg",
+      "alt": "參訪黎明方舟牧場",
+      "caption": "五味屋兒少參訪黎明方舟牧場，實地觀摩友善畜牧環境。",
+      "description": "五味屋兒少赴壽豐黎明方舟牧場實地見習，初次接觸符合動物福利標準的非籠飼飼養環境與母雞生活作息。"
+    },
+    {
+      "id": "gallery_02",
+      "image": "web_assets/images/gallery/0530_02_isa_brown_hen.jpg",
+      "alt": "觀察伊莎蛋雞體態",
+      "caption": "孩子們親手割牧草餵食，近距離觀察伊莎蛋雞的健康體態。",
+      "description": "孩子們在專業人員引導下親自割草餵食，仔細觀察伊莎蛋雞進食與羽色光澤，建立對動物健康的敏銳度。"
+    },
+    {
+      "id": "gallery_03",
+      "image": "web_assets/images/gallery/0530_03_life_experience.jpg",
+      "alt": "體驗處理雞蛋過程",
+      "caption": "跨出教室走入農牧現場，孩子們親自體驗檢查與處理雞蛋的過程。",
+      "description": "告別抽象教科書，五味屋兒少在牧場親自拿取雞蛋，仔細檢視蛋殼光潔度與重量，展開生命教育的真實探索。"
+    },
+    {
+      "id": "gallery_04",
+      "image": "web_assets/images/gallery/0530_04_group_photo.jpg",
+      "alt": "牧場見習結束留影",
+      "caption": "圓滿結束黎明方舟牧場見習，全體夥伴在農場合影留念。",
+      "description": "在豐富充實的實地觀摩後，五味屋兒少與青年志工在方舟牧場前開心合照，為啟動友善養雞計畫凝聚共識。"
+    },
+    {
+      "id": "gallery_05",
+      "image": "web_assets/images/gallery/0606_05_timber_assembly.jpg",
+      "alt": "合力組裝木構主體",
+      "caption": "大專青年、兒少與五味屋同仁齊心協力，合力組裝雞舍木構主體。",
+      "description": "不假他人之手，青年志工、兒少與五味屋夥伴在農學願基地合力搬運並固定實木結構，親手建起動物福利的家。"
+    },
+    {
+      "id": "gallery_06",
+      "image": "web_assets/images/gallery/0606_06_verify_parts.jpg",
+      "alt": "確認說明書與部件",
+      "caption": "組裝前仔細核對說明書部件與結構排列，確保施工步驟正確無誤。",
+      "description": "面對細節複雜的說明書，孩子與青年志工在施工前逐一清點排列所有木材與五金配件，以嚴謹態度確保組裝品質。"
+    },
+    {
+      "id": "gallery_07",
+      "image": "web_assets/images/gallery/0606_07_instruction_reading.jpg",
+      "alt": "識別部件討論組裝",
+      "caption": "五味屋同仁帶領兒少對照說明書識別各項部件，共同討論並構思組裝方式。",
+      "description": "五味屋工作同仁耐心地帶著孩子們研讀圖面，引導兒少主動提出施工構想，在動手實作中培養解決問題的自信心。"
+    },
+    {
+      "id": "gallery_08",
+      "image": "web_assets/images/gallery/0606_08_assembly_complete.jpg",
+      "alt": "雞舍主體完工合影",
+      "caption": "雞舍木構主體順利組裝完畢，全體兒少與志工在基地前合影留念。",
+      "description": "經過一整天的揮汗勞動，堅固通風的雞舍主體架構順利落成，大家在即將迎接母雞入住的新家前留下珍貴紀念。"
+    },
+    {
+      "id": "gallery_09",
+      "image": "web_assets/images/gallery/0725_09_recruitment_pledge.jpg",
+      "alt": "招商大會簽署誓約",
+      "caption": "夥伴們齊聚招商大會簽署生命誓約，依各自專長分派守護崗位。",
+      "description": "孩子們齊聚五味屋本舖深度理解五大自由精神，慎重簽署《生命守護誓約書》，自主認領餵食、清理與記錄工作。"
+    },
+    {
+      "id": "gallery_10",
+      "image": "web_assets/images/gallery/0803_10_expert_guidance.jpg",
+      "alt": "獸醫師現場專業指導",
+      "caption": "李宏韡獸醫師親臨雞舍基地指導，帶領青年與兒少檢視飼養環境與通風設計。",
+      "description": "計畫指導業師李宏韡獸醫師親赴五味屋農學願雞舍現場，與青年志工及兒少深入探討棲架高度、通風對流及動福標準，建立紮實專業照護知識。"
+    },
+    {
+      "id": "gallery_11",
+      "image": "web_assets/images/gallery/0816_11_hand_feeding.jpg",
+      "alt": "孩子掌心親手餵食",
+      "caption": "孩子們在草地上輕攤掌心親手餵食，建立人雞互信並觀察母雞健康體態。",
+      "description": "兒少在戶外活動空間以雙手盛裝天然穀物親手餵飼，在零距離親密互動中細心觀察母雞啄食節奏與羽毛光澤，體會生命陪伴與責任承諾。"
+    },
+    {
+      "id": "gallery_12",
+      "image": "web_assets/images/gallery/0825_12_presentation_prep.jpg",
+      "alt": "兒少主導成發籌備",
+      "caption": "兒少負責人帶領同儕回顧活動歷程，自主籌備與構思成果發表的內容與簡報。",
+      "description": "兒少負責人帶領同儕回顧整個活動歷程，自主籌備與構思成果發表的內容、簡報與呈現方式，自信展現深度學習的成長軌跡。"
+    }
+  ]
+}
